@@ -15,3 +15,8 @@ docker compose up
 docker-compose build
 docker-compose up
 ```
+Website runs on ```localhost```. All requests that start with ```/api``` will be redirected to the backend, while the rest will go to frontend.
+
+For instance:
+- **Backend:** ```localhost/api``` - ```localhost/api/users```
+- **Frontend:** ```localhost``` - ```localhost/login```
