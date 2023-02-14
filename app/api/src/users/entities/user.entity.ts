@@ -1,4 +1,4 @@
-import { Column, PrimaryColumn } from 'typeorm'
+import { Column, Entity, PrimaryColumn } from 'typeorm'
 
 export enum Role {
     student = 'Student',
@@ -6,14 +6,15 @@ export enum Role {
     admin = 'Admin'
 }
 
+@Entity()
 export class User {
-    @PrimaryColumn()
+    @PrimaryColumn({ unique: true })
     id: number
 
-    @Column()
+    @PrimaryColumn({ unique: true, length: 16 })
     login: string
 
-    @Column()
+    @Column({ length: 56 })
     name: string
 
     @Column()
@@ -25,6 +26,6 @@ export class User {
     @Column()
     circle: number
 
-    @Column()
+    @Column({ type: 'enum', enum: Role })
     role: Role
 }

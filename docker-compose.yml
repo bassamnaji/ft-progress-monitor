@@ -1,6 +1,9 @@
-version: '3.3'
+version: "3.3"
 
 services:
+    # frontend (Nuxtjs)
+    web:
+        image: node:19
 
   # frontend (Nuxtjs)
   web:
@@ -95,9 +98,9 @@ services:
       - web
 
 networks:
-  proxy_frontend_net:
-  proxy_backend_net:
-  backend_db_net:
+    proxy_frontend_net:
+    proxy_backend_net:
+    backend_db_net:
 
 volumes:
-  db-data:
+    db-data:
