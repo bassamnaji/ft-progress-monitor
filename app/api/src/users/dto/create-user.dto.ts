@@ -1,4 +1,4 @@
-import { IsDate, IsEnum, IsNumber, IsString } from 'class-validator'
+import { IsBoolean, IsDate, IsEnum, IsNumber, IsString } from 'class-validator'
 import { Role } from '../entities/user.entity'
 
 export class CreateUserDto {
@@ -19,6 +19,9 @@ export class CreateUserDto {
 
     @IsNumber()
     circle: number
+
+    @IsBoolean()
+    isStudent: boolean
 
     @IsEnum(Role)
     role: Role

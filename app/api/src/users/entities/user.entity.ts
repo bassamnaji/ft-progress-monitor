@@ -26,6 +26,9 @@ export class User {
     @Column()
     circle: number
 
+    @Column()
+    isStudent: boolean
+
     @Column({ type: 'enum', enum: Role })
     role: Role
 }
