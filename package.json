@@ -3,5 +3,8 @@
   "private": true,
   "devDependencies": {
     "lerna": "^6.4.1"
+  },
+  "dependencies": {
+    "class-validator": "^0.14.0"
   }
 }
