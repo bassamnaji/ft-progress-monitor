@@ -6,7 +6,7 @@ import { UpdateUserDto } from './dto/update-user.dto'
 export class UsersController {
     constructor(private readonly usersService: UsersService) {}
 
-    @Get()
+    @Get('students')
     findAll() {
         return this.usersService.findAll()
     }

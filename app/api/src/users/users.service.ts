@@ -12,7 +12,7 @@ export class UsersService {
     ) {}
 
     async findAll() {
-        return await this.userRepository.find()
+        return await this.userRepository.findBy({ isStudent: true })
     }
 
     async findOne(id: number) {
