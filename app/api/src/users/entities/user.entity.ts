@@ -6,6 +6,12 @@ export enum Role {
     admin = 'Admin'
 }
 
+/**
+ *
+ ** etof:   Esitmated Time of Finish
+ *              Type Date Object
+ *
+ **/
 @Entity()
 export class User {
     @PrimaryColumn({ unique: true })

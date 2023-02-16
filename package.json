@@ -7,8 +7,8 @@
 	"license": "UNLICENSED",
 	"scripts": {
 		"docker:build:dev": "docker compose up -d",
-		"docker:full:wipe": "docker compose down -v --rmi local",
-		"gen:key": "npm --prefix screen-me-backend run gen:key"
+        "docker:wipe:data": "docker compose down",
+		"docker:full:wipe": "docker compose down -v --rmi local"
 	},
 	"workspaces": [
 		"app/*"

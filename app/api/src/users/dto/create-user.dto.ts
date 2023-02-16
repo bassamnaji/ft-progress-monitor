@@ -1,6 +1,12 @@
 import { IsBoolean, IsDate, IsEnum, IsNumber, IsString } from 'class-validator'
 import { Role } from '../entities/user.entity'
 
+/**
+ *
+ ** etof:   Esitmated Time of Finish
+ *              @IsDate() of type Date Object
+ *
+ **/
 export class CreateUserDto {
     @IsNumber()
     id: number
