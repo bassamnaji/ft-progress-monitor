@@ -15,7 +15,7 @@ services:
         volumes:
             - ./app/web:/usr/src/app
 
-        command: bash -c "chown -R node:node /usr/src/app && yarn dev"
+        command: bash -c "chown -R node:node /usr/src/app && yarn && yarn dev"
 
         ports:
             - 3000:3000
@@ -45,7 +45,7 @@ services:
         volumes:
             - ./app/api:/usr/src/app
 
-        command: bash -c "chown -R node:node /usr/src/app && npm run start:dev"
+        command: bash -c "chown -R node:node /usr/src/app && npm install && npm run start:dev"
 
         networks:
             - proxy_backend_net
