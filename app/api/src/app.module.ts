@@ -4,6 +4,7 @@ import { ConfigService, ConfigModule } from '@nestjs/config'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
 import { UsersModule } from './users/users.module'
+import { AuthModule } from './auth/auth.module'
 
 const dataSource = async (config: ConfigService) => {
     const options: TypeOrmModuleOptions = {
@@ -23,6 +24,8 @@ const dataSource = async (config: ConfigService) => {
 @Module({
     imports: [
         ConfigModule.forRoot({ isGlobal: true }),
+
+        AuthModule,
 
         UsersModule,
 
