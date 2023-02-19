@@ -10,9 +10,6 @@
         "docker:wipe:data": "docker compose down",
 		"docker:full:wipe": "docker compose down -v --rmi local"
 	},
-	"workspaces": [
-		"app/*"
-	],
 	"devDependencies": {
 		"lerna": "^6.4.1"
 	}
