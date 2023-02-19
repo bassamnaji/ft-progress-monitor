@@ -12,13 +12,13 @@ export class UsersService {
     ) {}
 
     async findAll() {
-        return await this.userRepository.findBy({ isStudent: true })
+        return await this.userRepository.findBy({ isStaff: false })
     }
 
     async findOne(id: number) {
         const user = await this.userRepository.findOneBy({
             id,
-            isStudent: true
+            isStaff: false
         })
 
         if (!user) {

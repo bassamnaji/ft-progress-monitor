@@ -33,7 +33,7 @@ export class User {
     circle: number
 
     @Column()
-    isStudent: boolean
+    isStaff: boolean
 
     @Column({ type: 'enum', enum: Role })
     role: Role

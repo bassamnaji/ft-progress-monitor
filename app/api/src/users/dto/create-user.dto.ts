@@ -27,7 +27,7 @@ export class CreateUserDto {
     circle: number
 
     @IsBoolean()
-    isStudent: boolean
+    isStaff: boolean
 
     @IsEnum(Role)
     role: Role
