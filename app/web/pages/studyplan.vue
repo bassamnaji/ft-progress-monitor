@@ -1,11 +1,7 @@
 <template>
-  <div>
     <div>
-      <h3>
-        For tesing:
-      </h3>
+        <VerticalSteps1 />
     </div>
-  </div>
 </template>
 
 <script setup>
