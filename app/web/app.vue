@@ -1,5 +1,6 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <NuxtLayout />
+    <NuxtPage />
   </div>
 </template>
