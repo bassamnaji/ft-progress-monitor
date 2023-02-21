@@ -4,6 +4,8 @@ import { Repository } from 'typeorm'
 import { CreateUserDto } from './dto/create-user.dto'
 import { UpdateUserDto } from './dto/update-user.dto'
 import { User } from './entities/user.entity'
+import { Role } from './roles/roles.decorator'
+import { Me } from '../auth/interface/intra.interface'
 
 @Injectable()
 export class UsersService {
@@ -11,39 +13,52 @@ export class UsersService {
         @InjectRepository(User) private userRepository: Repository<User>
     ) {}
 
-    async findAll() {
-        return await this.userRepository.findBy({ isStaff: false })
+    private async calculateETOF(intraUser: Me) {
+        const etof = new Date()
+        return etof
     }
 
-    async findOne(id: number) {
-        const user = await this.userRepository.findOneBy({
-            id,
-            isStaff: false
+    private async checkStaff(intraUser: Me) {
+        return intraUser['staff?'] ? Role.staff : Role.student
+    }
+
+    private async findCircle(intra: Me): Promise<number> {
+        return 1
+    }
+
+    private async create(intraUser, userDto: CreateUserDto) {
+        const createdUser = this.userRepository.create({
+            id: intraUser.id,
+            login: intraUser.login,
+            name: intraUser.displayname,
+            kickOff: intraUser.kickOff,
+            etof: intraUser.etof,
+            circle: intraUser.circle,
+            isStaff: intraUser.isStaff,
+            role: intraUser.role
         })
 
-        if (!user) {
-            throw new NotFoundException()
-        }
+        await this.userRepository.save(createdUser)
 
-        return user
+        return await this.userRepository.findOneBy({})
     }
 
-    async findOrCreate(id: number, userDto: CreateUserDto) {
-        let user = await this.userRepository.findOneBy({ id })
+    async findOrCreate(intraUser, createUserDto: CreateUserDto) {
+        let found = await this.userRepository.findOneBy({})
 
-        const httpStatus = user ? HttpStatus.CREATED : HttpStatus.OK
+        const httpStatus = found ? HttpStatus.CREATED : HttpStatus.OK
 
-        if (!user) {
-            user = await this.userRepository.save(userDto)
+        if (!found) {
+            found = await this.create(intraUser, createUserDto)
         }
 
-        return { httpStatus, user }
+        return { httpStatus, found }
     }
 
-    async update(id: number, updateUserDto: UpdateUserDto) {
-        const user = await this.userRepository.findOneBy({ id })
+    async update(id: number, user: UpdateUserDto) {
+        const found = await this.userRepository.findOneBy({ id })
 
-        if (!user) {
+        if (!found) {
             throw new NotFoundException()
         }
 
@@ -60,5 +75,23 @@ export class UsersService {
         }
 
         return
+    }
+
+    async findAll() {
+        return await this.userRepository.findBy({ isStaff: false })
+    }
+
+    async findOne(id: number, role: Role) {
+        const isStaff = Role.staff ? true : false
+        const user = await this.userRepository.findOneBy({
+            id,
+            isStaff
+        })
+
+        if (!user) {
+            throw new NotFoundException()
+        }
+
+        return user
     }
 }

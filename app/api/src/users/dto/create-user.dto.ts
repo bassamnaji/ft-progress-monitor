@@ -1,5 +1,5 @@
 import { IsBoolean, IsDate, IsEnum, IsNumber, IsString } from 'class-validator'
-import { Role } from '../entities/user.entity'
+import { Role } from '../roles/roles.decorator'
 
 /**
  *

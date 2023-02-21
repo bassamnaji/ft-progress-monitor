@@ -1,10 +1,5 @@
 import { Column, Entity, PrimaryColumn } from 'typeorm'
-
-export enum Role {
-    student = 'Student',
-    staff = 'Bocal',
-    admin = 'Admin'
-}
+import { Role } from '../roles/roles.decorator'
 
 /**
  *
