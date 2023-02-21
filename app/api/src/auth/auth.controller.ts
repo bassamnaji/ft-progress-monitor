@@ -50,6 +50,7 @@ export class AuthController {
 
         const token: string = await this.authService.getJwt(user.found)
 
-        return res.status(user.httpStatus).json(new AccessTokenDto(token))
+        // return res.status(user.httpStatus).json(new AccessTokenDto(token))
+        return
     }
 }

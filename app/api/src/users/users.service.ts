@@ -22,8 +22,14 @@ export class UsersService {
         return intraUser['staff?'] ? Role.staff : Role.student
     }
 
-    private async findCircle(intra: Me): Promise<number> {
-        return 1
+    private async findCircle(intraUser: Me): Promise<number> {
+        for (const project of intraUser.projects_users) {
+            if (!project['validated?'].valueOf()) {
+                return 0
+            }
+        }
+
+        return 0
     }
 
     private async create(intraUser, userDto: CreateUserDto) {

@@ -1,7 +1,6 @@
 import { AuthService } from './auth.service'
 import { AuthController } from './auth.controller'
 import {
-    forwardRef,
     MiddlewareConsumer,
     Module,
     NestModule,
@@ -16,13 +15,18 @@ import { ConfigModule, ConfigService } from '@nestjs/config'
 import { ValidationMiddleware } from './middleware/validation.middleware'
 import { UsersService } from 'src/users/users.service'
 import { CreateUserDto } from 'src/users/dto/create-user.dto'
+import { UsersModule } from 'src/users/users.module'
 
 @Module({
     imports: [
         PassportModule,
+
         ConfigModule,
+
+        UsersModule,
+
         JwtModule.registerAsync({
-            imports: [ConfigModule, UsersService, CreateUserDto],
+            imports: [ConfigModule],
             inject: [ConfigService],
             useFactory: (configService: ConfigService) => ({
                 secret: configService.get('JWT_SECRET'),
@@ -35,10 +39,15 @@ import { CreateUserDto } from 'src/users/dto/create-user.dto'
     controllers: [AuthController],
     providers: [
         AuthService,
+
         FtStrategy,
+
         JwtStrategy,
+
         AuthRepository,
+
         UsersService,
+
         CreateUserDto
     ]
 })

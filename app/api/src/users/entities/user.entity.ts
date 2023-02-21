@@ -32,4 +32,16 @@ export class User {
 
     @Column({ type: 'enum', enum: Role })
     role: Role
+
+    @Column()
+    currentPace: number
+
+    @Column()
+    paceSelected: number
+
+    @Column()
+    isFrozen: boolean
+
+    @Column()
+    atRisk: boolean
 }

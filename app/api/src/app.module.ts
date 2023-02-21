@@ -6,7 +6,7 @@ import { AppService } from './app.service'
 import { UsersModule } from './users/users.module'
 import { AuthModule } from './auth/auth.module'
 
-const dataSource = async (config: ConfigService) => {
+export const typeOrmConfig = async (config: ConfigService) => {
     const options: TypeOrmModuleOptions = {
         type: 'postgres',
         host: config.getOrThrow('POSTGRES_HOST'),
@@ -27,11 +27,9 @@ const dataSource = async (config: ConfigService) => {
 
         AuthModule,
 
-        UsersModule,
-
         TypeOrmModule.forRootAsync({
             imports: [ConfigModule],
-            useFactory: dataSource,
+            useFactory: typeOrmConfig,
             inject: [ConfigService]
         })
     ],

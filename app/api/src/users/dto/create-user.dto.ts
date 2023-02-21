@@ -31,4 +31,16 @@ export class CreateUserDto {
 
     @IsEnum(Role)
     role: Role
+
+    @IsNumber()
+    currentPace: number
+
+    @IsNumber()
+    paceSelected: number
+
+    @IsBoolean()
+    isFrozen: boolean
+
+    @IsBoolean()
+    atRisk: boolean
 }
