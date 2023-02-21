@@ -1,6 +1,8 @@
 <template>
   <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
     <div class="grid max-w-2xl mx-auto">
+      <!-- fguhijgfhgjk -->
+      <PaceTabsCommp />
       <div class="flex">
         <div class="flex flex-col items-center mr-6">
           <div class="w-px h-10 opacity-0 sm:h-full"></div>
@@ -242,7 +244,7 @@
 // after we fetch, we get the circle number, student is an object to test, the circle property is set to 3 in this example and can be changed to 7 max;
 const student = {
   // change color to see design change
-  circle: 2
+  circle: 5
 }
 
 // we are destructuring the circle propert from the student object and setting it to num

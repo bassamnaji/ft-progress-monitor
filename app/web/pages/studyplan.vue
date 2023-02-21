@@ -1,6 +1,6 @@
 <template>
     <div>
-        <VerticalSteps1 />
+        <StudyPlanComp />
     </div>
 </template>
 
