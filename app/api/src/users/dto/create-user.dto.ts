@@ -41,6 +41,6 @@ export class CreateUserDto {
     @IsBoolean()
     isFrozen: boolean
 
-    @IsBoolean()
+    @IsBoolean({ default: false })
     atRisk: boolean
 }

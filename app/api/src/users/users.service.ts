@@ -33,7 +33,7 @@ export class UsersService {
     }
 
     private async create(intraUser, userDto: CreateUserDto) {
-        const createdUser = this.userRepository.create({
+        userDto = {
             id: intraUser.id,
             login: intraUser.login,
             name: intraUser.displayname,
@@ -41,12 +41,18 @@ export class UsersService {
             etof: intraUser.etof,
             circle: intraUser.circle,
             isStaff: intraUser.isStaff,
-            role: intraUser.role
-        })
+            role: intraUser.role,
+            currentPace: intraUser.currentPace,
+            paceSelected: intraUser.paceSelected,
+            isFrozen: intraUser.isFrozen,
+            atRisk: false
+        }
+
+        const createdUser = this.userRepository.create(userDto)
 
         await this.userRepository.save(createdUser)
 
-        return await this.userRepository.findOneBy(createdUser)
+        return createdUser
     }
 
     async findOrCreate(intraUser, userDto) {

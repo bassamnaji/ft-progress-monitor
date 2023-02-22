@@ -42,6 +42,6 @@ export class User {
     @Column()
     isFrozen: boolean
 
-    @Column()
+    @Column({ default: false })
     atRisk: boolean
 }
