@@ -17,42 +17,67 @@ export class UsersService {
     constructor(
         @InjectRepository(User) private userRepository: Repository<User>,
         private createUserDto: CreateUserDto
-    ) {}
+    ) {
+        const exams = [
+            'Exam Rank 02',
+            'Exam Rank 03',
+            'Exam Rank 04',
+            'Exam Rank 05',
+            'Exam Rank 06'
+        ]
+        const circleZero = ['Libft']
 
-    private async calculateETOF(intraUser: Me) {
-        const etof = new Date()
-        return etof
+        const circleOne = ['get_next_line', 'Born2beroot', 'ft_printf']
+        const circleTwo = [
+            'minitalk',
+            'FdF',
+            'so_long',
+            'fract-ol',
+            'push_swap'
+        ]
+        const circleThree = ['minishell', 'Philosophers']
+        const circleFour = ['cub3d', 'miniRT', 'NetPractice', 'CPP Module 08']
+        const circleFive = ['Inception', 'ft_irc', 'webserv', 'ft_containers']
+        const circleSix = ['ft_transcendence']
     }
 
-    private checkStaff(intraUser: Me) {
+    private checkLastProject(intraUser: Me) {
+        const projects = intraUser.projects_users
+
+        for (const project of projects) {
+            if (!project['validated?'] && project.created_at) {
+                return project.project.name
+            }
+        }
+    }
+
+    private assignRole(intraUser: Me) {
         return intraUser['staff?'] ? Role.staff : Role.student
     }
 
     private async findCircle(intraUser: Me): Promise<number> {
-        for (const project of intraUser.projects_users) {
-            if (!project['validated?'].valueOf()) {
-                return 0
-            }
-        }
-
         return 0
     }
 
     private async create(intraUser: Me, createUser: CreateUserDto) {
-        createUser = {
-            id: intraUser.id,
-            login: intraUser.login,
-            displayname: intraUser.displayname,
-            kickOff: intraUser.cursus_users.at(1).begin_at,
-            etof: new Date(),
-            circle: 3,
-            isStaff: intraUser['isStaff?'],
-            role: this.checkStaff(intraUser),
-            currentPace: 12,
-            paceSelected: 12,
-            isFrozen: false,
-            freezeRemain: 3,
-            atRisk: false
+        const isStaff = intraUser['staff?']
+
+        if (!isStaff) {
+            createUser = {
+                id: intraUser.id,
+                login: intraUser.login,
+                displayname: intraUser.displayname,
+                kickOff: intraUser.cursus_users.at(2).begin_at,
+                circle: 3,
+                isStaff: intraUser['isStaff?'],
+                role: this.assignRole(intraUser),
+                lastProject: this.checkLastProject(intraUser),
+                currentPace: 12,
+                paceSelected: 12,
+                isFrozen: false,
+                freezeRemain: 3,
+                atRisk: false
+            }
         }
 
         const createdUser = this.userRepository.create(createUser)
