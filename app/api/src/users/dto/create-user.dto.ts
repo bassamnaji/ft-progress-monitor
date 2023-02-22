@@ -15,7 +15,7 @@ export class CreateUserDto {
     login: string
 
     @IsString()
-    name: string
+    displayname: string
 
     @IsDate()
     kickOff: Date
@@ -33,14 +33,20 @@ export class CreateUserDto {
     role: Role
 
     @IsNumber()
-    currentPace: number
+    currentPace?: number
 
     @IsNumber()
-    paceSelected: number
+    paceSelected?: number
 
     @IsBoolean()
-    isFrozen: boolean
+    isFrozen?: boolean
+
+    @IsNumber()
+    freezeRemain?: number
 
     @IsBoolean({ default: false })
-    atRisk: boolean
+    atRisk?: boolean
+
+    @IsNumber()
+    blackHole?: number
 }

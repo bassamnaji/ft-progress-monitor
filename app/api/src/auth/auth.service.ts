@@ -20,7 +20,8 @@ export class AuthService {
     async getJwt(user): Promise<string> {
         const payload = {
             id: user.id,
-            login: user.login
+            login: user.login,
+            staff: user.isStaff
         }
 
         return this.jwtService.sign(payload)

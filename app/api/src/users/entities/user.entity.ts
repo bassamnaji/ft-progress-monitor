@@ -16,7 +16,7 @@ export class User {
     login: string
 
     @Column({ length: 56 })
-    name: string
+    displayname: string
 
     @Column()
     kickOff: Date
@@ -34,14 +34,20 @@ export class User {
     role: Role
 
     @Column()
-    currentPace: number
+    currentPace?: number
 
     @Column()
-    paceSelected: number
+    paceSelected?: number
 
     @Column()
-    isFrozen: boolean
+    isFrozen?: boolean
+
+    @Column()
+    freezeRemain?: number
 
     @Column({ default: false })
-    atRisk: boolean
+    atRisk?: boolean
+
+    @Column()
+    blackHole?: number
 }

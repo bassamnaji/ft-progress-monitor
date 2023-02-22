@@ -27,6 +27,8 @@ export const typeOrmConfig = async (config: ConfigService) => {
 
         AuthModule,
 
+        UsersModule,
+
         TypeOrmModule.forRootAsync({
             imports: [ConfigModule],
             useFactory: typeOrmConfig,

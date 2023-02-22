@@ -11,14 +11,13 @@ import { UsersService } from './users.service'
 import { UpdateUserDto } from './dto/update-user.dto'
 import { JwtAuthGuard } from 'src/common/guards/jwt.guard'
 import { Roles, Role } from './roles/roles.decorator'
-
 @Controller('users')
 export class UsersController {
     constructor(private readonly usersService: UsersService) {}
 
     @Roles(Role.staff)
     @UseGuards(JwtAuthGuard)
-    @Get('students')
+    @Get('all')
     findAll() {
         return this.usersService.findAll()
     }
@@ -26,8 +25,8 @@ export class UsersController {
     @Roles(Role.staff || Role.student)
     @UseGuards(JwtAuthGuard)
     @Get('search/:id')
-    findOne(@Param('id') id: string, role: Role) {
-        return this.usersService.findOne(+id, role)
+    findOne(@Param('id') id: string, @Param('isStaff?') isStaff: boolean) {
+        return this.usersService.findOne(+id, isStaff)
     }
 
     @Roles(Role.staff)
