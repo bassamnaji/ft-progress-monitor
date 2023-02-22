@@ -16,6 +16,7 @@ import { ValidationMiddleware } from './middleware/validation.middleware'
 import { UsersService } from 'src/users/users.service'
 import { CreateUserDto } from 'src/users/dto/create-user.dto'
 import { UsersModule } from 'src/users/users.module'
+import { ProjectModule } from 'src/project/project.module'
 
 @Module({
     imports: [
@@ -24,6 +25,8 @@ import { UsersModule } from 'src/users/users.module'
         ConfigModule,
 
         UsersModule,
+
+        ProjectModule,
 
         JwtModule.registerAsync({
             imports: [ConfigModule],

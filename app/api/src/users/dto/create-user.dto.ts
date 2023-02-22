@@ -44,7 +44,8 @@ export class CreateUserDto {
     @IsNumber()
     freezeRemain?: number
 
-    @IsBoolean({ default: false })
+    // @IsBoolean({ default: false })
+    @IsBoolean()
     atRisk?: boolean
 
     @IsNumber()

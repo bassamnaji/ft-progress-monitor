@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryColumn } from 'typeorm'
+import { Project } from 'src/project/entities/project.entity'
+import { Column, Entity, OneToMany, PrimaryColumn } from 'typeorm'
 import { Role } from '../roles/roles.decorator'
 
 /**
@@ -50,4 +51,7 @@ export class User {
 
     @Column()
     blackHole?: number
+
+    @OneToMany(() => Project, (project) => project.user)
+    projects: Project
 }

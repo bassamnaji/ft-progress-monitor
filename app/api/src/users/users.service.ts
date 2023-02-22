@@ -11,11 +11,13 @@ import { UpdateUserDto } from './dto/update-user.dto'
 import { User } from './entities/user.entity'
 import { Role } from './roles/roles.decorator'
 import { Me } from '../auth/interface/intra.interface'
+import { ProjectService } from 'src/project/project.service'
 
 @Injectable()
 export class UsersService {
     constructor(
         @InjectRepository(User) private userRepository: Repository<User>,
+        private readonly projectService: ProjectService,
         private createUserDto: CreateUserDto
     ) {}
 
@@ -56,6 +58,8 @@ export class UsersService {
         }
 
         const createdUser = this.userRepository.create(createUser)
+
+        await this.projectService.saveProjects(intraUser, createdUser);
 
         await this.userRepository.save(createdUser)
 
