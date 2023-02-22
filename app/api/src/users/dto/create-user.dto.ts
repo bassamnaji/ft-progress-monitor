@@ -1,12 +1,6 @@
 import { IsBoolean, IsDate, IsEnum, IsNumber, IsString } from 'class-validator'
 import { Role } from '../roles/roles.decorator'
 
-/**
- *
- ** etof:   Esitmated Time of Finish
- *              @IsDate() of type Date Object
- *
- **/
 export class CreateUserDto {
     @IsNumber()
     id: number
@@ -20,9 +14,6 @@ export class CreateUserDto {
     @IsDate()
     kickOff: Date
 
-    @IsDate()
-    etof: Date
-
     @IsNumber()
     circle: number
 
@@ -31,6 +22,9 @@ export class CreateUserDto {
 
     @IsEnum(Role)
     role: Role
+
+    @IsString({ null: true })
+    lastProject: string | null
 
     @IsNumber()
     currentPace?: number

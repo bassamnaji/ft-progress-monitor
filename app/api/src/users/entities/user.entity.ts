@@ -2,12 +2,6 @@ import { Project } from 'src/project/entities/project.entity'
 import { Column, Entity, OneToMany, PrimaryColumn } from 'typeorm'
 import { Role } from '../roles/roles.decorator'
 
-/**
- *
- ** etof:   Esitmated Time of Finish
- *              Type Date Object
- *
- **/
 @Entity()
 export class User {
     @PrimaryColumn({ unique: true })
@@ -23,9 +17,6 @@ export class User {
     kickOff: Date
 
     @Column()
-    etof: Date
-
-    @Column()
     circle: number
 
     @Column()
@@ -33,6 +24,9 @@ export class User {
 
     @Column({ type: 'enum', enum: Role })
     role: Role
+
+    @Column({ length: 56 })
+    lastProject: string
 
     @Column()
     currentPace?: number
