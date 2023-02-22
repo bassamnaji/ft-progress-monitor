@@ -44,10 +44,18 @@ export class UsersService {
     private checkLastProject(intraUser: Me) {
         const projects = intraUser.projects_users
 
+        let oldDate
+
         for (const project of projects) {
-            if (!project['validated?'] && project.created_at) {
-                return project.project.name
+            let newDate = project.updated_at
+
+            if (oldDate > newDate) {
+                if (project['validated?'] && project.cursus_ids.at(2) === 21) {
+                    return project.project.name
+                }
             }
+
+            oldDate = project.updated_at
         }
     }
 
