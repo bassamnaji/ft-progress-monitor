@@ -20,7 +20,7 @@ export class AuthController {
         @Req() req: Request,
         @Res() res: Response,
         @Body() createUserDto: CreateUserDto
-    ): Promise<AccessTokenDto> {
+    ): Promise<Response> {
         const student = {
             id: 5182,
             login: 'hakaddou',
@@ -50,7 +50,6 @@ export class AuthController {
 
         const token: string = await this.authService.getJwt(user.found)
 
-        // return res.status(user.httpStatus).json(new AccessTokenDto(token))
-        return
+        return res.status(user.httpStatus).json(new AccessTokenDto(token))
     }
 }

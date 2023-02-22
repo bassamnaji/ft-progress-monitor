@@ -46,16 +46,16 @@ export class UsersService {
 
         await this.userRepository.save(createdUser)
 
-        return await this.userRepository.findOneBy({})
+        return await this.userRepository.findOneBy(createdUser)
     }
 
-    async findOrCreate(intraUser, createUserDto: CreateUserDto) {
-        let found = await this.userRepository.findOneBy({})
+    async findOrCreate(intraUser, userDto) {
+        let found = await this.userRepository.findOneBy(intraUser)
 
         const httpStatus = found ? HttpStatus.CREATED : HttpStatus.OK
 
         if (!found) {
-            found = await this.create(intraUser, createUserDto)
+            found = await this.create(intraUser, userDto)
         }
 
         return { httpStatus, found }

@@ -3,14 +3,12 @@ import { Injectable } from '@nestjs/common'
 import { IntraAccessToken, Me } from './interface/intra.interface'
 import { JwtService } from '@nestjs/jwt'
 import { AuthRepository } from './repository/auth.repository'
-import { UsersService } from 'src/users/users.service'
 
 @Injectable({})
 export class AuthService {
     constructor(
         private jwtService: JwtService,
-        private authrepository: AuthRepository,
-        private userService: UsersService
+        private authrepository: AuthRepository
     ) {}
 
     async validateUserWithIntra(code: string): Promise<Me> {
@@ -24,10 +22,7 @@ export class AuthService {
             id: user.id,
             login: user.login
         }
-        return this.jwtService.sign(payload)
-    }
 
-    async createOrFind(student, createUserDto) {
-        return await this.userService.findOrCreate(student, createUserDto)
+        return this.jwtService.sign(payload)
     }
 }
