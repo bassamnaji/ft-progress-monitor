@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default ({
   runtimeConfig: {
     public: {
@@ -9,6 +10,17 @@ export default ({
       apiBase: '/api'
     }
   },
+  modules: [
+    '@nuxtjs/color-mode',
+  ],
+  colorMode: {
+    classSuffix: ''
+  },
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  // plugins: [
+    // { src: '~/plugins/chart.js', mode: 'client' },
+    // { src: '~/plugins/axios.js' }
+  // ],
   css: [
     '@/assets/css/main.css',
   ],
@@ -18,4 +30,7 @@ export default ({
       autoprefixer: {},
     },
   },
+  // build: {
+  //   transpile: ['chart.js']
+  // }
 })

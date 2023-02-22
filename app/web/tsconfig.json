@@ -3,5 +3,6 @@
   "compilerOptions": {
     "typeRoots": ["node_modules/@types"]
   },
+  "modules": ["chart.js"],
   "extends": "./.nuxt/tsconfig.json"
 }
