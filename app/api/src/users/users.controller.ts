@@ -31,13 +31,6 @@ export class UsersController {
 
     @Roles(Role.staff)
     @UseGuards(JwtAuthGuard)
-    @Patch('update/:id')
-    update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-        return this.usersService.update(+id, updateUserDto)
-    }
-
-    @Roles(Role.staff)
-    @UseGuards(JwtAuthGuard)
     @Delete('remove/:id')
     remove(@Param('id') id: string) {
         return this.usersService.remove(+id)

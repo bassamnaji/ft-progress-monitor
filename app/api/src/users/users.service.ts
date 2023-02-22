@@ -74,16 +74,6 @@ export class UsersService {
         return { httpStatus, found }
     }
 
-    async update(id: number, user: UpdateUserDto) {
-        const found = await this.userRepository.findOneBy({ id })
-
-        if (!found) {
-            throw new NotFoundException()
-        }
-
-        return
-    }
-
     async remove(id: number) {
         const user = await this.userRepository.findOneBy({ id })
 
