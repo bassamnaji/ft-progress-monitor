@@ -28,13 +28,13 @@ export const typeOrmConfig = async (config: ConfigService) => {
 
         UsersModule,
 
+        ProjectModule,
+
         TypeOrmModule.forRootAsync({
             imports: [ConfigModule],
             useFactory: typeOrmConfig,
             inject: [ConfigService]
-        }),
-
-        ProjectModule
+        })
     ]
 })
 export class AppModule {}

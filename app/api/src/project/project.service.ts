@@ -6,16 +6,13 @@ import { Repository } from 'typeorm'
 import { CreateProjectDto } from './dto/create-project.dto'
 import { Project } from './entities/project.entity'
 import { ProjectInfoResponseDto } from './dto/project-info.dto'
-import { UsersService } from 'src/users/users.service'
-import { all } from 'axios'
 
 @Injectable()
 export class ProjectService {
     constructor(
         @InjectRepository(Project)
         private projectRepository: Repository<Project>,
-        private createProjectDto: CreateProjectDto,
-        private readonly userService: UsersService
+        private createProjectDto: CreateProjectDto
     ) {}
 
     async saveProjects(
@@ -50,17 +47,4 @@ export class ProjectService {
         })
         return projects.map((projects) => new ProjectInfoResponseDto(projects))
     }
-
-    // async findAll(project: string) {
-    //     return await this.projectRepository.findBy({ project })
-    // }
-
-    // async findOne(projectName: string, userId: number) {
-    //     const user = await this.userService.findOne(userId)
-
-    //     return await this.projectRepository.findOneBy({
-    //         project: projectName,
-    //         user: user
-    //     })
-    // }
 }

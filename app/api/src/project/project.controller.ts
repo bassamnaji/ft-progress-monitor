@@ -17,16 +17,4 @@ import { JwtAuthGuard } from 'src/common/guards/jwt.guard'
 @Controller('project')
 export class ProjectController {
     constructor(private readonly projectService: ProjectService) {}
-
-    @Roles(Role.staff)
-    @UseGuards(JwtAuthGuard)
-    @Get('all/:project')
-    findAll(@Param('project') project: string) {
-        return this.projectService.findAll(project)
-    }
-
-    @Roles(Role.staff || Role.student)
-    findOne(@Param('project') project: string, @Param('id') userId: number) {
-        return this.projectService.findOne(project, userId)
-    }
 }
