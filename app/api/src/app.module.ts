@@ -1,11 +1,9 @@
 import { Module } from '@nestjs/common'
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm'
 import { ConfigService, ConfigModule } from '@nestjs/config'
-import { AppController } from './app.controller'
-import { AppService } from './app.service'
 import { UsersModule } from './users/users.module'
 import { AuthModule } from './auth/auth.module'
-import { ProjectModule } from './project/project.module';
+import { ProjectModule } from './project/project.module'
 
 export const typeOrmConfig = async (config: ConfigService) => {
     const options: TypeOrmModuleOptions = {
@@ -37,8 +35,6 @@ export const typeOrmConfig = async (config: ConfigService) => {
         }),
 
         ProjectModule
-    ],
-    controllers: [AppController],
-    providers: [AppService]
+    ]
 })
 export class AppModule {}

@@ -12,10 +12,10 @@ export class CreateUserDto {
     displayname: string
 
     @IsDate()
-    kickOff: Date
+    kickOff?: Date
 
     @IsNumber()
-    circle: number
+    circle?: number
 
     @IsBoolean()
     isStaff: boolean
@@ -24,7 +24,10 @@ export class CreateUserDto {
     role: Role
 
     @IsString({ null: true })
-    lastProject: string | null
+    lastProject?: string | null
+
+    @IsDate()
+    lastSubmitted?: Date
 
     @IsNumber()
     currentPace?: number
