@@ -15,22 +15,22 @@ import { Roles, Role } from './roles/roles.decorator'
 export class UsersController {
     constructor(private readonly usersService: UsersService) {}
 
-    @Roles(Role.staff)
-    @UseGuards(JwtAuthGuard)
+    // @Roles(Role.staff)
+    // @UseGuards(JwtAuthGuard)
     @Get('all')
     findAll() {
         return this.usersService.findAll()
     }
 
-    @Roles(Role.staff || Role.student)
-    @UseGuards(JwtAuthGuard)
+    // @Roles(Role.staff || Role.student)
+    // @UseGuards(JwtAuthGuard)
     @Get('search/:id')
     findOne(@Param('id') id: string, @Param('isStaff?') isStaff: boolean) {
         return this.usersService.findOne(+id, isStaff)
     }
 
-    @Roles(Role.staff)
-    @UseGuards(JwtAuthGuard)
+    // @Roles(Role.staff)
+    // @UseGuards(JwtAuthGuard)
     @Delete('remove/:id')
     remove(@Param('id') id: string) {
         return this.usersService.remove(+id)

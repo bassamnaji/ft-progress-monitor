@@ -23,7 +23,7 @@ export class CreateUserDto {
     @IsEnum(Role)
     role: Role
 
-    @IsString({ null: true })
+    // @IsString({ null: true })
     lastProject: string | null
 
     @IsNumber()

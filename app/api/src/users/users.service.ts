@@ -59,6 +59,7 @@ export class UsersService {
 
             oldDate = project.updated_at
         }
+        return 'ft_transcendence'
     }
 
     private assignRole(intraUser: Me) {
@@ -77,22 +78,23 @@ export class UsersService {
                 id: intraUser.id,
                 login: intraUser.login,
                 displayname: intraUser.displayname,
-                kickOff: intraUser.cursus_users.at(2).begin_at,
+                kickOff: intraUser.cursus_users.at(1).begin_at,
                 circle: 3,
-                isStaff: intraUser['isStaff?'],
+                isStaff: isStaff,
                 role: this.assignRole(intraUser),
                 lastProject: this.checkLastProject(intraUser),
                 currentPace: 12,
                 paceSelected: 12,
                 isFrozen: false,
                 freezeRemain: 3,
-                atRisk: false
+                atRisk: false,
+                blackHole: 50
             }
         }
 
         const createdUser = this.userRepository.create(createUser)
 
-        await this.projectService.saveProjects(intraUser, createdUser);
+        // await this.projectService.saveProjects(intraUser, createdUser);
 
         await this.userRepository.save(createdUser)
 
@@ -100,13 +102,16 @@ export class UsersService {
     }
 
     async findOrCreate(intraUser: Me) {
-        let found = await this.userRepository.findOneBy(intraUser)
+        console.log('fosfdsklfasjdklf')
+        let found = await this.userRepository.findOneBy({login: intraUser.login})
 
         const httpStatus = found ? HttpStatus.CREATED : HttpStatus.OK
 
+        console.log('found', found)
         if (!found) {
             found = await this.create(intraUser, this.createUserDto)
         }
+        console.log('found2', found)
 
         return { httpStatus, found }
     }
