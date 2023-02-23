@@ -1,17 +1,13 @@
 <template>
-  <div>
     <div>
-      <h3>
-        For tesing:
-      </h3>
+
     </div>
-  </div>
 </template>
 
 <script setup>
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

@@ -1,11 +1,7 @@
 <template>
-  <div>
     <div>
-      <h3>
-        For tesing:
-      </h3>
+        <StudyPlanComp />
     </div>
-  </div>
 </template>
 
 <script setup>
