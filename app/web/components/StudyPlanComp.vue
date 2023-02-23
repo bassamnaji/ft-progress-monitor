@@ -81,7 +81,7 @@
         <div
           class="inline-flex bg-purple-600 text-white rounded-full h-6 px-3 justify-center items-center whitespace-nowrap"
         >
-          Kickoff: {{ dateTest.toDateString() + ` ->` }}
+          Kickoff: {{ student.kickoff.toDateString() + ` ->` }}
         </div>
         <div
           class="inline-flex px-2 text-black whitespace-nowrap justify-center"
@@ -693,7 +693,7 @@ function incrimentDate(edate, num) {
   edate.setDate(edate.getDate() + num);
 }
 
-incrimentDate(dateTest, -53 - 365 - 30 + 17 + 30);
+incrimentDate(dateTest, -53 - 365 - 30 + 17 + 34);
 // to make kickoff to jan for testing
 
 // after we fetch, we get the circle number, student is an object to test, the circle property is set to 3 in this example and can be changed to 7 max;
@@ -702,6 +702,11 @@ let student = ref({
   circle: 4,
   kickoff: dateTest,
   pace_chosen: 8,
+  currentpace: 0,
+  lastSub: {
+    name: "",
+    subDate: null
+  },
   project: {
     libft: {
       name: "Libft",
@@ -1273,6 +1278,53 @@ function resetDates() {
 
 setPaceDates(0);
 resetDates();
+
+const dayMs = 86400000;
+
+student.value.lastSub.name = "Libft";
+student.value.lastSub.subDate = new Date();
+
+
+function  getDateDiff(start, end)
+{
+  const dayMs = 86400000;
+  let num = (start.getTime() - end.getTime()) / dayMs;
+  return (Math.abs(num));
+}
+
+
+incrimentDate(student.value.lastSub.subDate, -420);
+console.log(getDateDiff(student.value.project.libft.e_date, student.value.lastSub.subDate));
+function determinePace()
+{
+  if (student.value.lastSub == null)
+    return;
+
+  if (student.value.lastSub.name == student.value.project.libft.name)
+  {
+    const num = getDateDiff(student.value.lastSub.subDate, student.value.project.libft.e_date);
+      if(num <= 8)
+      console.log("you're on pace 8");
+      else if (num <= 13)
+      console.log("you're on pace 12");
+      else if (num <= 18)
+      console.log("you're on pace 15");
+      else if (num <= 24)
+      console.log("you're on pace 18");
+      else if (num <= 30)
+      console.log("you're on pace 22");
+      else
+      console.log(`you're on ${student.value.project.libft.name} you're on pace 24`);
+  }
+  else if (student.value.lastSub.name == student.value.project.ft_printf.name)
+  {
+    //left here after I got stuck on which I sould take as the last submitted project date
+    const num = getDateDiff(student.value.lastSub.subDate, student.value.project.ft_printf.e_date);
+    console.log(`you're on ${student.value.project.ft_printf.name} you're on pace 24`);
+  }
+}
+
+determinePace();
 
 function paceSelect(thisPace) {
   // since we used thge ref keyword, we should not
