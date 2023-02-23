@@ -4,6 +4,14 @@
       <img class="absolute top-0 left-0 w-full h-24 object-cover" src="https://images.unsplash.com/photo-1621246159024-e53b1d25fc1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3Njk4NDUwMA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
       <img class="relative w-16 h-16 mb-4 mx-auto rounded-full object-cover hoverZoomLink object-center" src="~/assets/images/bnaji.jpg" alt=""/>
       <div class="px-6 text-center">
+        <div class="absolute">
+          <svg class="absolute  fill-purple-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8250e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+            <path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"/>
+          </svg>
+          <svg class="absolute ml-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ed6c00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
         <h3 class="font-medium text-slate-200">Bnaji</h3>
         <p class="mb-2 text-sm text-gray-300">Bassam Naji</p>
         <div class="flex items-center justify-center mb-6"><span class="mr-2">
@@ -13,19 +21,19 @@
           </span>
           <a class="text-sm text-slate-400" src="bnaji@student.42abudhabi.ae">bnaji@student.42abudhabi.ae</a>
         </div>
-        <div class="mb-6">
-          <a class="inline-flex items-center justify-center mr-6 w-auto h-auto p-5 text-slate-100 bg-slate-500 ease-in duration-100 hover:text-purple-700 hover:bg-slate-400 rounded-full" href="#">
-            get_next_line
-          </a>
-          <a class="inline-flex items-center justify-center mr-6 w-auto h-auto p-5 text-slate-100 bg-slate-500 ease-in duration-100 hover:text-purple-700 hover:bg-slate-400 rounded-full" href="#">
+        <div class="mb-6 grid md:grid-cols-3 gap-8">
+          <a class="w-auto col-start-2 h-auto p-5 text-slate-100 bg-slate-500 ease-in duration-100 hover:text-purple-700 hover:bg-slate-400 rounded-full" href="#">
             ft_transcendence
           </a>
-          <a class="inline-flex items-center justify-center w-auto h-auto p-5 text-slate-100 bg-slate-500 ease-in duration-100 hover:text-purple-700 hover:bg-slate-400 rounded-full" href="#">
-            born2beroot
+          <a class="col-span-3 justify-center w-auto h-auto p-5 text-slate-100 bg-slate-500 ease-in duration-100 hover:text-purple-900 hover:bg-purple-500 rounded-full" href="#">
+            exam_rank_02
           </a>
         </div>
       </div>
-        <button class="w-full h-20 py-5 border-t border-gray-400 text-xs text-white ease-in duration-200 hover:text-purple-300 hover:bg-slate-600 uppercase">study plan >></button>
+          <NuxtLink to="/studyplan" class="flex justify-center w-full h-20 py-5 border-t border-gray-400 text-xs text-white ease-in duration-200 hover:text-purple-300 hover:bg-slate-600 uppercase">
+            <span class="text-lg">study plan</span>
+            <svg class="m-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 17l5-5-5-5M6 17l5-5-5-5"/></svg>
+          </NuxtLink>
     </div>
   </div>
 </template>
