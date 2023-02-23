@@ -1,6 +1,7 @@
 <template>
   <div class="container px-4 mx-auto">
     <div class="relative p-10 pt-14 bg-slate-700 shadow-xl rounded overflow-hidden">
+      <Tabs />
       <Line :data="chartData" :options="chartOptions" />
     </div>
   </div>
@@ -29,41 +30,43 @@ ChartJS.register(
   Legend
 )
 
-const mydata = {
+const weekData = {
   labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
   datasets: [
     {
       label: 'Login Hours',
       borderColor: '#ff8a76',
-      backgroundColor: '#820bbb',
+      backgroundColor: '#ff8a76',
       color: '#fff',
-      data: [40, 39, 10, 40, 39, 80, 40]
+      data: [6, 12, 11, 7, 13, 11, 9]
+    }
+  ]
+}
+
+const monthData = {
+  labels: ['week1', 'week2', 'week3', 'week4'],
+  datasets: [
+    {
+      label: 'Login Hours',
+      borderColor: '#ff8a76',
+      backgroundColor: '#ff8a76',
+      color: '#fff',
+      data: [73, 56, 65, 60]
     }
   ]
 }
 
 export default {
-  name: 'App',
+  name: 'LoginHours',
   components: {
     Line
   },
   data() {
     return {
-      chartData: {
-        labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-        datasets: [
-          {
-            label: 'Login Hours',
-            borderColor: '#ff8a76',
-            backgroundColor: '#ff8a76',
-            borderWidth: 2,
-            data: [40, 39, 10, 40, 39, 80, 40]
-          }
-        ]
-      },
+      chartData: weekData,
       chartOptions: {
+        color: '#fff',
         responsive: true,
-        lineTension: 0.2,
         scales: {
           x: {
             grid: {

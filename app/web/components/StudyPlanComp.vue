@@ -55,14 +55,14 @@
     </div>
 </div> -->
 
-<!-- <div class="inline-flex items-center bg-white leading-none ${props.textColor} rounded-full p-2 shadow text-teal text-sm">
-    <span class="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 justify-center items-center">
+<div class="inline-flex items-center bg-white leading-none ${props.textColor} rounded-full p-2 shadow text-teal text-sm">
+    <span class="inline-flex bg-blue-600 text-white rounded-full h-6 px-3 justify-center items-center">
         Kickoff: {{ dateTest.toDateString()}}
     </span>
     <span class="inline-flex px-2 text-pink-600">
         Im a sexy badge and you can use me everyday at every hour.
     </span>
-</div> -->
+</div>
 <div v-if="student.pace_chosen == 24"
   class="inline-flex items-center justify-center rounded-full bg-red-100 px-2.5 py-0.5 text-red-700"
 >
