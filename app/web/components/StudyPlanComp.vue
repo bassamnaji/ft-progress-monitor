@@ -18,53 +18,37 @@
 </div>
 <ul class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg shadow sm:flex dark:divide-black dark:text-white">
 <li class="w-full">
-<a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 rounded-l-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-blue-600 dark:text-white" aria-current="page" @click="paceSelect(8)">p8</a>
+<a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 rounded-l-lg focus:ring-4 focus:ring-purple-300 active focus:outline-none dark:bg-purple-600 dark:text-white" aria-current="page" @click="paceSelect(8)">Pace 8</a>
 </li>
 <li class="w-full">
-<a href="#" class="inline-block w-full p-4 bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-blue-600 dark:hover:bg-gray-700" @click="paceSelect(12)">p12</a>
+<a href="#" class="inline-block w-full p-4 bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-purple-300 focus:outline-none dark:hover:text-white dark:bg-purple-600 dark:hover:bg-gray-700" @click="paceSelect(12)">Pace 12</a>
 </li>
 <li class="w-full">
-<a href="#" class="inline-block w-full p-4 bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-blue-600 dark:hover:bg-gray-700" @click="paceSelect(15)">p15</a>
+<a href="#" class="inline-block w-full p-4 bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-purple-300 focus:outline-none dark:hover:text-white dark:bg-purple-600 dark:hover:bg-gray-700" @click="paceSelect(15)">Pace 15</a>
 </li>
 <li class="w-full">
-<a href="#" class="inline-block w-full p-4 bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-blue-600 dark:hover:bg-gray-700" @click="paceSelect(18)">p18</a>
+<a href="#" class="inline-block w-full p-4 bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-purple-300 focus:outline-none dark:hover:text-white dark:bg-purple-600 dark:hover:bg-gray-700" @click="paceSelect(18)">Pace 18</a>
 </li>
 <li class="w-full">
-<a href="#" class="inline-block w-full p-4 bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-blue-600 dark:hover:bg-gray-700" @click="paceSelect(22)">p22</a>
+<a href="#" class="inline-block w-full p-4 bg-white hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-purple-300 focus:outline-none dark:hover:text-white dark:bg-purple-600 dark:hover:bg-gray-700" @click="paceSelect(22)">Pace 22</a>
 </li>
 <li class="w-full">
-<a href="#" class="inline-block w-full p-4 bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-blue-600 dark:hover:bg-gray-700" @click="paceSelect(24)">p24</a>
+<a href="#" class="inline-block w-full p-4 bg-white rounded-r-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:hover:text-white dark:bg-purple-600 dark:hover:bg-gray-700" @click="paceSelect(24)">Pace 24</a>
 </li>
 
 </ul>
-
 </div>
 
-<!-- <div>
-    <div class="block p-4 m-auto bg-white rounded-lg shadow w-72">
-        <div>
-            <span class="text-xs font-light inline-block py-1 px-2 uppercase rounded-full text-white bg-pink-300">
-                Task in progress
-            </span>
-        </div>
-        <div class="w-full h-4 bg-gray-400 rounded-full mt-3">
-            <div class="w-3/4 h-full text-center text-xs text-white bg-pink-300 rounded-full">
-                75%
-            </div>
-        </div>
-    </div>
-</div> -->
-
-<!-- <div class="inline-flex items-center bg-white leading-none ${props.textColor} rounded-full p-2 shadow text-teal text-sm">
-    <span class="inline-flex bg-pink-600 text-white rounded-full h-6 px-3 justify-center items-center">
-        Kickoff: {{ dateTest.toDateString()}}
+<div class="inline-flex items-center bg-white leading-none ${props.textColor} rounded-full p-2 shadow text-teal text-sm mt-3">
+    <span class="inline-flex bg-purple-600 text-white rounded-full h-6 px-3 justify-center items-center whitespace-nowrap">
+        Kickoff: {{ dateTest.toDateString() + ` ->`}}
     </span>
-    <span class="inline-flex px-2 text-pink-600">
-        Im a sexy badge and you can use me everyday at every hour.
+    <span class="inline-flex px-2 text-black whitespace-nowrap justify-center">
+      ETEC: {{ student.project.ft_transcendence.e_date.toDateString()}}
     </span>
-</div> -->
-<div v-if="student.pace_chosen == 24"
-  class="inline-flex items-center justify-center rounded-full bg-red-100 px-2.5 py-0.5 text-red-700"
+  
+    <div v-if="student.pace_chosen == 24"
+  class="inline-flex items-center justify-center rounded-full bg-red-100 px-2.5 py-0.5 text-red-700 ml-10"
 >
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +56,7 @@
     viewBox="0 0 24 24"
     stroke-width="1.5"
     stroke="currentColor"
-    class="-ml-1 mr-1.5 h-4 w-4"
+    class="-ml-1 mr-1.5 h-4 w-4 "
   >
     <path
       stroke-linecap="round"
@@ -80,11 +64,10 @@
       d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
     />
   </svg>
-
   <p class="whitespace-nowrap text-sm">Dangerous territory, go back!!</p>
 </div>
 
-<p>Kickoff: {{ dateTest.toDateString()}}, ETEC: {{ student.project.ft_transcendence.e_date.toDateString() }}</p>
+</div>
 <div class="flex">
   <div class="flex flex-col items-center mr-6">
     <div class="w-px h-10 opacity-0 sm:h-full"></div>
@@ -103,7 +86,7 @@
         <svg v-if="color[0] === '#00FA9A'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52" style="transform: translateY(-0.25rem);">
           <path fill="none" stroke-width="3" d="M16 34l8.5 8.5L36 22"></path>
         </svg>
-        <svg v-else-if="color[0] === '#7DF9FF'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
+        <svg v-else-if="color[0] === '#7B4299'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
           <path fill="none" stroke-width="3" d="M14 26h24m-12-12l12 12-12 12"></path>
         </svg>
         <svg v-else class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
@@ -133,7 +116,7 @@
               <svg v-if="color[1] === '#00FA9A'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52" style="transform: translateY(-0.25rem);">
       <path fill="none" stroke-width="3" d="M16 34l8.5 8.5L36 22"></path>
     </svg>
-    <svg v-else-if="color[1] === '#7DF9FF'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
+    <svg v-else-if="color[1] === '#7B4299'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
       <path fill="none" stroke-width="3" d="M14 26h24m-12-12l12 12-12 12"></path>
     </svg>
     <svg v-else class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
@@ -165,7 +148,7 @@
               <svg v-if="color[2] === '#00FA9A'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52" style="transform: translateY(-0.25rem);">
       <path fill="none" stroke-width="3" d="M16 34l8.5 8.5L36 22"></path>
     </svg>
-    <svg v-else-if="color[2] === '#7DF9FF'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
+    <svg v-else-if="color[2] === '#7B4299'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
       <path fill="none" stroke-width="3" d="M14 26h24m-12-12l12 12-12 12"></path>
     </svg>
     <svg v-else class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
@@ -197,7 +180,7 @@
               <svg v-if="color[3] === '#00FA9A'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52" style="transform: translateY(-0.25rem);">
       <path fill="none" stroke-width="3" d="M16 34l8.5 8.5L36 22"></path>
     </svg>
-    <svg v-else-if="color[3] === '#7DF9FF'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
+    <svg v-else-if="color[3] === '#7B4299'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
       <path fill="none" stroke-width="3" d="M14 26h24m-12-12l12 12-12 12"></path>
     </svg>
     <svg v-else class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
@@ -228,7 +211,7 @@
               <svg v-if="color[4] === '#00FA9A'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52" style="transform: translateY(-0.25rem);">
       <path fill="none" stroke-width="3" d="M16 34l8.5 8.5L36 22"></path>
     </svg>
-    <svg v-else-if="color[4] === '#7DF9FF'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
+    <svg v-else-if="color[4] === '#7B4299'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
       <path fill="none" stroke-width="3" d="M14 26h24m-12-12l12 12-12 12"></path>
     </svg>
     <svg v-else class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
@@ -260,7 +243,7 @@
               <svg v-if="color[5] === '#00FA9A'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52" style="transform: translateY(-0.25rem);">
       <path fill="none" stroke-width="3" d="M16 34l8.5 8.5L36 22"></path>
     </svg>
-    <svg v-else-if="color[5] === '#7DF9FF'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
+    <svg v-else-if="color[5] === '#7B4299'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
       <path fill="none" stroke-width="3" d="M14 26h24m-12-12l12 12-12 12"></path>
     </svg>
     <svg v-else class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
@@ -292,7 +275,7 @@
               <svg v-if="color[6] === '#00FA9A'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52" style="transform: translateY(-0.25rem);">
       <path fill="none" stroke-width="3" d="M16 34l8.5 8.5L36 22"></path>
     </svg>
-    <svg v-else-if="color[6] === '#7DF9FF'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
+    <svg v-else-if="color[6] === '#7B4299'" class="w-12 h-12 text-black sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
       <path fill="none" stroke-width="3" d="M14 26h24m-12-12l12 12-12 12"></path>
     </svg>
     <svg v-else class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52">
@@ -320,7 +303,7 @@ function incrimentDate(edate, num)
   edate.setDate(edate.getDate() + num);
 }
 
-incrimentDate(dateTest, -53);
+incrimentDate(dateTest, -53 - 365 - 97);
 // to make kickoff to jan for testing
 
 // after we fetch, we get the circle number, student is an object to test, the circle property is set to 3 in this example and can be changed to 7 max;
@@ -814,7 +797,7 @@ for (i = 0; i < num; i++)
 }
 
 // mark the current circle with blue
-color[i] = "#7DF9FF";
+color[i] = "#7B4299";
 </script>
 
 <style scoped>
