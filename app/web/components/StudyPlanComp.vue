@@ -78,16 +78,16 @@
       <div
         class="inline-flex items-center bg-white leading-none ${props.textColor} rounded-full p-2 shadow text-teal text-sm mt-3"
       >
-        <span
+        <div
           class="inline-flex bg-purple-600 text-white rounded-full h-6 px-3 justify-center items-center whitespace-nowrap"
         >
           Kickoff: {{ dateTest.toDateString() + ` ->` }}
-        </span>
-        <span
+        </div>
+        <div
           class="inline-flex px-2 text-black whitespace-nowrap justify-center"
         >
           ETEC: {{ student.project.ft_transcendence.e_date.toDateString() }}
-        </span>
+        </div>
 
         <div
           v-if="student.pace_chosen == 24"
@@ -146,7 +146,7 @@
                 ></path>
               </svg>
               <svg
-                v-else-if="color[0] === '#7B4299'"
+                v-else-if="color[0] === '#8A2BE2'"
                 class="w-12 h-12 text-black sm:w-16 sm:h-16"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
@@ -217,7 +217,7 @@
                 ></path>
               </svg>
               <svg
-                v-else-if="color[1] === '#7B4299'"
+                v-else-if="color[1] === '#8A2BE2'"
                 class="w-12 h-12 text-black sm:w-16 sm:h-16"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
@@ -304,7 +304,7 @@
                 ></path>
               </svg>
               <svg
-                v-else-if="color[2] === '#7B4299'"
+                v-else-if="color[2] === '#8A2BE2'"
                 class="w-12 h-12 text-black sm:w-16 sm:h-16"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
@@ -389,7 +389,7 @@
                 ></path>
               </svg>
               <svg
-                v-else-if="color[3] === '#7B4299'"
+                v-else-if="color[3] === '#8A2BE2'"
                 class="w-12 h-12 text-black sm:w-16 sm:h-16"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
@@ -467,7 +467,7 @@
                 ></path>
               </svg>
               <svg
-                v-else-if="color[4] === '#7B4299'"
+                v-else-if="color[4] === '#8A2BE2'"
                 class="w-12 h-12 text-black sm:w-16 sm:h-16"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
@@ -553,7 +553,7 @@
                 ></path>
               </svg>
               <svg
-                v-else-if="color[5] === '#7B4299'"
+                v-else-if="color[5] === '#8A2BE2'"
                 class="w-12 h-12 text-black sm:w-16 sm:h-16"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
@@ -639,7 +639,7 @@
                 ></path>
               </svg>
               <svg
-                v-else-if="color[6] === '#7B4299'"
+                v-else-if="color[6] === '#8A2BE2'"
                 class="w-12 h-12 text-black sm:w-16 sm:h-16"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
@@ -1328,7 +1328,7 @@ for (i = 0; i < num; i++) {
 }
 
 // mark the current circle with blue
-color[i] = "#7B4299";
+color[i] = "#8A2BE2";
 </script>
 
 <style scoped>
