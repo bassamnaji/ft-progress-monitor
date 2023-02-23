@@ -1,6 +1,6 @@
 <template>
   <div class="container px-4 mx-auto">
-    <div class="relative p-10 pt-14 bg-slate-700 shadow-xl rounded overflow-hidden">
+    <div class="relative p-10 pt-14 bg-slate-200 dark:bg-slate-700 shadow-xl rounded overflow-hidden">
       <Tabs />
       <Line :data="chartData" :options="chartOptions" />
     </div>
@@ -37,7 +37,6 @@ const weekData = {
       label: 'Login Hours',
       borderColor: '#ff8a76',
       backgroundColor: '#ff8a76',
-      color: '#fff',
       data: [6, 12, 11, 7, 13, 11, 9]
     }
   ]
@@ -50,7 +49,6 @@ const monthData = {
       label: 'Login Hours',
       borderColor: '#ff8a76',
       backgroundColor: '#ff8a76',
-      color: '#fff',
       data: [73, 56, 65, 60]
     }
   ]
@@ -65,7 +63,7 @@ export default {
     return {
       chartData: weekData,
       chartOptions: {
-        color: '#fff',
+        color: '#999',
         responsive: true,
         scales: {
           x: {

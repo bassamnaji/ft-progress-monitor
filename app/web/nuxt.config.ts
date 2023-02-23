@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default ({
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
   runtimeConfig: {
     public: {
       client_id: process.env.CLIENT_ID,
@@ -16,11 +19,6 @@ export default ({
   colorMode: {
     classSuffix: ''
   },
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  // plugins: [
-    // { src: '~/plugins/chart.js', mode: 'client' },
-    // { src: '~/plugins/axios.js' }
-  // ],
   css: [
     '@/assets/css/main.css',
   ],
@@ -30,7 +28,4 @@ export default ({
       autoprefixer: {},
     },
   },
-  // build: {
-  //   transpile: ['chart.js']
-  // }
 })

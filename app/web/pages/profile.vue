@@ -10,8 +10,5 @@
 </template>
 
 <script setup>
-definePageMeta({
-  class: 'dark',
-})
 const appConfig = useAppConfig();
 </script>
