@@ -14,6 +14,9 @@ export class User {
     displayname: string
 
     @Column()
+    logHours?: number
+
+    @Column()
     kickOff?: Date
 
     @Column()

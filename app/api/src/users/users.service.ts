@@ -41,6 +41,10 @@ export class UsersService {
         }
     }
 
+    private getLogHours(): number {
+        return Math.random()
+    }
+
     private async getBlackHole(user: Me) {
         const day = 86400000
         const start = user.cursus_users.at(1).begin_at.getTime()
@@ -119,6 +123,7 @@ export class UsersService {
                 id: intraUser.id,
                 login: intraUser.login,
                 displayname: intraUser.displayname,
+                logHours: this.getLogHours(),
                 kickOff: intraUser.cursus_users.at(1).begin_at,
                 isStaff: isStaff,
                 role: this.assignRole(intraUser),

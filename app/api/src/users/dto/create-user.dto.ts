@@ -11,6 +11,9 @@ export class CreateUserDto {
     @IsString()
     displayname: string
 
+    @IsNumber()
+    logHours?: number
+
     @IsDate()
     kickOff?: Date
 
