@@ -7,7 +7,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
       if (access_token) {
         const tok = useCookie('access_token')
         tok.value = access_token
-        return navigateTo('/')
+        return navigateTo('/profile')
       }
       else {
         throw Error('Unauthorized')
