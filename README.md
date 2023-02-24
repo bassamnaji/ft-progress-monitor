@@ -1,5 +1,7 @@
 # **42-PM** (42 Progress Monitor)
 
+![LoginPage](https://github.com/bassamnaji/ft-progress-monitor/blob/back-end/loginPage.png?raw=true)
+
 ## **Project Summary:**
 
 This project was developed for use by 42 Abu Dhabi to monitor (both individual and group) student progress as per the current pace system implemented.
