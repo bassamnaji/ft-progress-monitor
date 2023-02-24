@@ -276,3 +276,10 @@ _Note: Students can only view their projects data._
 -   **_to fill_**
 -   **_to fill_**
     <br><br/>
+
+# Future Implementations
+
+1.  Bubble chart to visualise student pace in groups
+    <br><br/>
+
+![Bubble Chart](https://github.com/bassamnaji/ft-progress-monitor/blob/back-end/bubbleChart.svg?raw=true)
