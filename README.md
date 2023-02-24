@@ -1,7 +1,7 @@
 # **42-PM** (42 Progress Monitor)
 
 <p align="center">[ ▁ ▇ ▂ ▇ ▅ ] PROGRESS MONITOR<br><br/>
-    <img src="https://github.com/bassamnaji/ft-progress-monitor/blob/dev/loginPage.png?raw=true" width=450 height=400 /><div/><p/>
+    <img src="https://github.com/bassamnaji/ft-progress-monitor/blob/main/loginPage.png?raw=true" width=450 height=400 /><div/><p/>
 
 ## **Project Summary:**
 
@@ -72,7 +72,7 @@ For example:
 
 ## **Wire Frame**
 
-![Wire Frame](https://github.com/bassamnaji/ft-progress-monitor/blob/dev/wireFrame.png?raw=true)
+![Wire Frame](https://github.com/bassamnaji/ft-progress-monitor/blob/main/wireFrame.png?raw=true)
 
 ### **Staff Use Case**
 
@@ -283,4 +283,4 @@ _Note: Students can only view their projects data._
         -   Filter by less than # of blackhole days.
         -   Based on attempts on exam/project.
 
-    ![Bubble Chart](https://github.com/bassamnaji/ft-progress-monitor/blob/dev/bubbleChart.svg?raw=true)
+    ![Bubble Chart](https://github.com/bassamnaji/ft-progress-monitor/blob/main/bubbleChart.svg?raw=true)
