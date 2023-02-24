@@ -1,7 +1,7 @@
 # **42-PM** (42 Progress Monitor)
 
-[ ▁ ▇ ▂ ▇ ▅ ] PROGRESS MONITOR<br><br/>
-![LoginPage](https://github.com/bassamnaji/ft-progress-monitor/blob/back-end/loginPage.png?raw=true)
+<p align="center">[ ▁ ▇ ▂ ▇ ▅ ] PROGRESS MONITOR<br><br/>
+    <img src="https://github.com/bassamnaji/ft-progress-monitor/blob/back-end/loginPage.png?raw=true" width=450 height=400 /><div/><p/>
 
 ## **Project Summary:**
 

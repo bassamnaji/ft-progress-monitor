@@ -115,29 +115,101 @@ export class UsersService {
         let user: User
 
         if (!isStaff) {
-            createUser = {
-                id: intraUser.id,
-                login: intraUser.login,
-                displayname: intraUser.displayname,
-                kickOff: intraUser.cursus_users.at(1).begin_at,
-                circle: 4,
-                isStaff: isStaff,
-                role: this.assignRole(intraUser),
-                lastProject: await this.checkLastProject(intraUser),
-                currentPace: 0,
-                paceSelected: 0,
-                isFrozen: false,
-                freezeRemain: 3,
-                atRisk: false,
-                blackHole: await this.getBlackHole(intraUser)
+            if (intraUser.login.match('bnaji')) {
+                createUser = {
+                    id: intraUser.id,
+                    login: intraUser.login,
+                    displayname: intraUser.displayname,
+                    kickOff: intraUser.cursus_users.at(1).begin_at,
+                    circle: 6,
+                    isStaff: false,
+                    role: Role.student,
+                    lastProject: 'Inception',
+                    currentPace: 12,
+                    paceSelected: 8,
+                    isFrozen: false,
+                    freezeRemain: 3,
+                    atRisk: false,
+                    blackHole: await this.getBlackHole(intraUser)
+                }
+            } else if (intraUser.login.match('hakaddou')) {
+                createUser = {
+                    id: intraUser.id,
+                    login: intraUser.login,
+                    displayname: intraUser.displayname,
+                    kickOff: intraUser.cursus_users.at(1).begin_at,
+                    circle: 4,
+                    isStaff: false,
+                    role: Role.student,
+                    lastProject: 'cub3D',
+                    currentPace: 12,
+                    paceSelected: 8,
+                    isFrozen: false,
+                    freezeRemain: 3,
+                    atRisk: false,
+                    blackHole: await this.getBlackHole(intraUser)
+                }
+            } else if (intraUser.login.match('hawadh')) {
+                createUser = {
+                    id: intraUser.id,
+                    login: intraUser.login,
+                    displayname: intraUser.displayname,
+                    kickOff: intraUser.cursus_users.at(1).begin_at,
+                    circle: 4,
+                    isStaff: false,
+                    role: Role.student,
+                    lastProject: 'CPP05',
+                    currentPace: 12,
+                    paceSelected: 8,
+                    isFrozen: false,
+                    freezeRemain: 3,
+                    atRisk: false,
+                    blackHole: await this.getBlackHole(intraUser)
+                }
+            } else if (intraUser.login.match('mpatel')) {
+                createUser = {
+                    id: intraUser.id,
+                    login: intraUser.login,
+                    displayname: intraUser.displayname,
+                    kickOff: intraUser.cursus_users.at(1).begin_at,
+                    circle: 6,
+                    isStaff: false,
+                    role: Role.student,
+                    lastProject: 'Inception',
+                    currentPace: 12,
+                    paceSelected: 8,
+                    isFrozen: false,
+                    freezeRemain: 3,
+                    atRisk: false,
+                    blackHole: await this.getBlackHole(intraUser)
+                }
+            } else {
+                createUser = {
+                    id: intraUser.id,
+                    login: intraUser.login,
+                    displayname: intraUser.displayname,
+                    kickOff: intraUser.cursus_users.at(1).begin_at,
+                    circle: 4,
+                    isStaff: isStaff,
+                    role: this.assignRole(intraUser),
+                    lastProject: await this.checkLastProject(intraUser),
+                    currentPace: 0,
+                    paceSelected: 0,
+                    isFrozen: false,
+                    freezeRemain: 3,
+                    atRisk: false,
+                    blackHole: await this.getBlackHole(intraUser)
+                }
+
+                createUser.lastSubmitted = await this.dateLastSubmitted(
+                    intraUser,
+                    createUser.lastProject
+                )
+
+                createUser.circle = await this.findCircle(
+                    createUser.lastProject
+                )
             }
-
-            createUser.lastSubmitted = await this.dateLastSubmitted(
-                intraUser,
-                createUser.lastProject
-            )
-
-            createUser.circle = await this.findCircle(createUser.lastProject)
         } else {
             createUser = {
                 id: intraUser.id,
