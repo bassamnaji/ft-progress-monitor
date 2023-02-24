@@ -279,7 +279,10 @@ _Note: Students can only view their projects data._
 
 # Future Implementations
 
-1.  Bubble chart to visualise student pace in groups:
-    ![Bubble Chart](https://github.com/bassamnaji/ft-progress-monitor/blob/dev/bubbleChart.svg?raw=true)
+-   Bubble chart to visualise students in groups based on filters:
 
-2.
+    -   Ability to apply custom filters to bubble chart:
+        -   Filter by less than # of blackhole days.
+        -   Based on attempts on exam/project.
+
+    ![Bubble Chart](https://github.com/bassamnaji/ft-progress-monitor/blob/dev/bubbleChart.svg?raw=true)
