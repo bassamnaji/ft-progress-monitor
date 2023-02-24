@@ -74,7 +74,6 @@
           </li>
         </ul>
       </div>
-
       <div
         class="inline-flex items-center bg-white leading-none ${props.textColor} rounded-full p-2 shadow text-teal text-sm mt-3"
       >
@@ -117,7 +116,7 @@
           <div class="w-px h-10 opacity-0 sm:h-full"></div>
           <div>
             <div
-              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full"
+              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full dark:text-slate-200"
             >
               c-0
             </div>
@@ -174,8 +173,10 @@
             </div>
           </div>
           <div>
-            <p class="text-xl font-semibold sm:text-base">Libft</p>
-            <p class="text-sm text-gray-700">
+            <p class="text-xl font-semibold sm:text-base dark:text-slate-200">
+              Libft
+            </p>
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               On pace {{ student.pace_chosen }}, your're expected to validate
               {{ student.project.libft.name }} before:
               <span class="bold">
@@ -190,7 +191,7 @@
           <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
           <div>
             <div
-              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full"
+              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full dark:text-slate-200"
             >
               c-1
             </div>
@@ -245,24 +246,24 @@
             </div>
           </div>
           <div>
-            <p class="text-xl font-semibold sm:text-base">
+            <p class="text-xl font-semibold sm:text-base dark:text-slate-200">
               Born2beroot, Get_next_line, ft_printf
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate
               {{ student.project.born2beroot.name }} before:
               <span class="bold">
                 {{ student.project.born2beroot.e_date.toDateString() }}</span
               >
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate
               {{ student.project.get_next_line.name }} before:
               <span class="bold">
                 {{ student.project.get_next_line.e_date.toDateString() }}</span
               >
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate
               {{ student.project.ft_printf.name }} before:
               <span class="bold">
@@ -277,7 +278,7 @@
           <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
           <div>
             <div
-              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full"
+              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full dark:text-slate-200"
             >
               c-2
             </div>
@@ -332,23 +333,23 @@
             </div>
           </div>
           <div>
-            <p class="text-xl font-semibold sm:text-base">
+            <p class="text-xl font-semibold sm:text-base dark:text-slate-200">
               Push Swap, Pixel, Mini-Pipe
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate
               {{ student.project.push_swap.name }} before:
               <span class="bold">
                 {{ student.project.push_swap.e_date.toDateString() }}</span
               >
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate pipex or minitalk before:
               <span class="bold">
                 {{ student.project.pipex.e_date.toDateString() }}</span
               >
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate so_long, fract-ol or fdf before:
               <span class="bold">
                 {{ student.project.so_long.e_date.toDateString() }}</span
@@ -362,7 +363,7 @@
           <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
           <div>
             <div
-              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full"
+              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full dark:text-slate-200"
             >
               c-3
             </div>
@@ -417,21 +418,30 @@
             </div>
           </div>
           <div>
-            <p class="text-xl font-semibold sm:text-base">Philo, Minishell</p>
-            <p class="text-sm text-gray-700">
+            <p class="text-xl font-semibold sm:text-base dark:text-slate-200">
+              Philo, Minishell
+            </p>
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate
               {{ student.project.philosophers.name }} before:
               <span class="bold">
                 {{ student.project.philosophers.e_date.toDateString() }}</span
               >
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate
               {{ student.project.minishell.name }} before
               <span class="bold">
                 {{ student.project.minishell.e_date.toDateString() }}</span
               >
             </p>
+            <div class="flex items-center space-x-1">
+      <span class="flex-shrink-0 w-12 text-sm dark:text-slate-200">circle 3</span>
+      <div class="flex-1 h-4 overflow-hidden rounded-sm bg-gray-300">
+        <div class="bg-purple-700 h-4 w-3/6"></div>
+      </div>
+      <span class="flex-shrink-0 w-12 text-sm text-right dark:text-slate-200">50%</span>
+    </div>
           </div>
         </div>
       </div>
@@ -440,7 +450,7 @@
           <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
           <div>
             <div
-              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full"
+              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full dark:text-slate-200"
             >
               c-4
             </div>
@@ -495,23 +505,23 @@
             </div>
           </div>
           <div>
-            <p class="text-xl font-semibold sm:text-base">
+            <p class="text-xl font-semibold sm:text-base dark:text-slate-200">
               Cpp, Cub-Rt, Netpractice
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate
               {{ student.project.netpractice.name }} before:
               <span class="bold">
                 {{ student.project.netpractice.e_date.toDateString() }}</span
               >
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate cub3d or miniRT before:
               <span class="bold">
                 {{ student.project.cub3d.e_date.toDateString() }}</span
               >
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate
               {{ student.project.cpp.name }} before:
               <span class="bold">
@@ -526,7 +536,7 @@
           <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
           <div>
             <div
-              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full"
+              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full dark:text-slate-200"
             >
               c-5
             </div>
@@ -581,23 +591,23 @@
             </div>
           </div>
           <div>
-            <p class="text-xl font-semibold sm:text-base">
+            <p class="text-xl font-semibold sm:text-base dark:text-slate-200">
               Inception, IRC, Containers
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate
               {{ student.project.ft_containers.name }} before:
               <span class="bold">
                 {{ student.project.ft_containers.e_date.toDateString() }}</span
               >
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate webserv or ft_irc before:
               <span class="bold">
                 {{ student.project.webserv.e_date.toDateString() }}</span
               >
             </p>
-            <p class="text-sm text-gray-700">
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               your're expected to validate
               {{ student.project.inception.name }} before:
               <span class="bold">
@@ -612,7 +622,7 @@
           <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
           <div>
             <div
-              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full"
+              class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full dark:text-slate-200"
             >
               c-6
             </div>
@@ -667,8 +677,10 @@
             </div>
           </div>
           <div>
-            <p class="text-xl font-semibold sm:text-base">Transendnece</p>
-            <p class="text-sm text-gray-700">
+            <p class="text-xl font-semibold sm:text-base dark:text-slate-200">
+              Transendnece
+            </p>
+            <p class="text-sm text-gray-700 dark:text-slate-200">
               Your're expected to validate
               {{ student.project.ft_transcendence.name }} before:
               <span class="bold">
@@ -688,6 +700,8 @@
 // global variable declartion in cimposable (as Mo3tasem taught me)
 // const userId = useUserId();
 
+import CircleSingleStat from './CircleSingleStat.vue';
+
 const dateTest = new Date();
 function incrimentDate(edate, num) {
   edate.setDate(edate.getDate() + num);
@@ -699,13 +713,13 @@ incrimentDate(dateTest, -53 - 365 - 90 - 10);
 // after we fetch, we get the circle number, student is an object to test, the circle property is set to 3 in this example and can be changed to 7 max;
 let student = ref({
   // change color to see design change
-  circle: 6,
+  circle: 3,
   kickoff: dateTest,
   pace_chosen: 8,
   currentpace: 0,
   lastSub: {
     name: "",
-    subDate: null
+    subDate: null,
   },
   project: {
     libft: {
@@ -1284,43 +1298,44 @@ const dayMs = 86400000;
 student.value.lastSub.name = "Libft";
 student.value.lastSub.subDate = new Date();
 
-
-function  getDateDiff(start, end)
-{
+function getDateDiff(start, end) {
   const dayMs = 86400000;
   let num = (start.getTime() - end.getTime()) / dayMs;
-  return (Math.abs(num));
+  return Math.abs(num);
 }
 
+incrimentDate(student.value.lastSub.subDate, -508);
+console.log(
+  getDateDiff(student.value.project.libft.e_date, student.value.lastSub.subDate)
+);
+function determinePace() {
+  if (student.value.lastSub == null) return;
 
-incrimentDate(student.value.lastSub.subDate, -420);
-console.log(getDateDiff(student.value.project.libft.e_date, student.value.lastSub.subDate));
-function determinePace()
-{
-  if (student.value.lastSub == null)
-    return;
-
-  if (student.value.lastSub.name == student.value.project.libft.name)
-  {
-    const num = getDateDiff(student.value.lastSub.subDate, student.value.project.libft.e_date);
-      if(num <= 8)
-      console.log("you're on pace 8");
-      else if (num <= 13)
-      console.log("you're on pace 12");
-      else if (num <= 18)
-      console.log("you're on pace 15");
-      else if (num <= 24)
-      console.log("you're on pace 18");
-      else if (num <= 30)
-      console.log("you're on pace 22");
-      else
-      console.log(`you're on ${student.value.project.libft.name} you're on pace 24`);
-  }
-  else if (student.value.lastSub.name == student.value.project.ft_printf.name)
-  {
+  if (student.value.lastSub.name == student.value.project.libft.name) {
+    const num = getDateDiff(
+      student.value.lastSub.subDate,
+      student.value.project.libft.e_date
+    );
+    if (num <= 8) console.log("you're on pace 8");
+    else if (num <= 13) console.log("you're on pace 12");
+    else if (num <= 18) console.log("you're on pace 15");
+    else if (num <= 24) console.log("you're on pace 18");
+    else if (num <= 30) console.log("you're on pace 22");
+    else
+      console.log(
+        `you're on ${student.value.project.libft.name} you're on pace 24`
+      );
+  } else if (
+    student.value.lastSub.name == student.value.project.ft_printf.name
+  ) {
     //left here after I got stuck on which I sould take as the last submitted project date
-    const num = getDateDiff(student.value.lastSub.subDate, student.value.project.ft_printf.e_date);
-    console.log(`you're on ${student.value.project.ft_printf.name} you're on pace 24`);
+    const num = getDateDiff(
+      student.value.lastSub.subDate,
+      student.value.project.ft_printf.e_date
+    );
+    console.log(
+      `you're on ${student.value.project.ft_printf.name} you're on pace 24`
+    );
   }
 }
 

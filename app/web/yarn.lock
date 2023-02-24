@@ -5798,6 +5798,11 @@ vue-devtools-stub@^0.1.0:
   resolved "https://registry.yarnpkg.com/vue-devtools-stub/-/vue-devtools-stub-0.1.0.tgz#a65b9485edecd4273cedcb8102c739b83add2c81"
   integrity sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==
 
+vue-dropdowns@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/vue-dropdowns/-/vue-dropdowns-1.1.2.tgz#ffa9873a3b69e2938e88dd62ce0c221462bd7bae"
+  integrity sha512-1zISzpdf+GaQfI8yyCSASGJkb3vkjr2ZtX276wSdix2F1pXU9stkvDPFUM5ac9sAWY/3rZjBSvw9bTBvFTGnTw==
+
 vue-eslint-parser@^9.0.1, vue-eslint-parser@^9.0.3:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-9.1.0.tgz#0e121d1bb29bd10763c83e3cc583ee03434a9dd5"
