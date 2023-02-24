@@ -26,7 +26,7 @@ export class UsersController {
 
     @UseGuards(JwtAuthGuard)
     @Get('me')
-    fetchLoggedUser(@Req() req: Req) {
+    fetchLoggedUser(@Req() req) {
         return this.usersService.findOne(req.user.id)
     }
 
@@ -54,7 +54,7 @@ export class UsersController {
     // @Roles(Role.staff)
     // @UseGuards(JwtAuthGuard)
     @Get('all/project')
-    findUsersByProject(@Body() body: Body) {
+    findUsersByProject(@Body() body) {
         console.log('input =', body)
 
         return this.usersService.findUsersByProject(body)
