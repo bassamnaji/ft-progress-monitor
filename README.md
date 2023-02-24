@@ -1,5 +1,8 @@
 # **42-PM** (42 Progress Monitor)
 
+<p align="center">[ ▁ ▇ ▂ ▇ ▅ ] PROGRESS MONITOR<br><br/>
+    <img src="https://github.com/bassamnaji/ft-progress-monitor/blob/back-end/loginPage.png?raw=true" width=450 height=400 /><div/><p/>
+
 ## **Project Summary:**
 
 This project was developed for use by 42 Abu Dhabi to monitor (both individual and group) student progress as per the current pace system implemented.
@@ -66,6 +69,10 @@ For example:
 <br><br/>
 
 # Project Details
+
+## **Wire Frame**
+
+![Wire Frame](https://github.com/bassamnaji/ft-progress-monitor/blob/back-end/wireFrame.png?raw=true)
 
 ### **Staff Use Case**
 
@@ -182,39 +189,54 @@ _Note: Students only have access to their profile._
 
     -   `'/auth'`:
         -   Authenitcates user and returns access tokens.
-        -   Checks role === staff ? true : false
-        -   If user authenticated but does not exist, it will create new user
+        -   Checks and assigns role === staff ? true : false.
+        -   If user authenticated but does not exist, it will create new user.
             <br><br/>
 
-2.  User Routes: `'/users'`
+2.  User Routes: `'/users'` **_(Role Guards Implemented)_**
 
     -   `'users/all'`:
 
-        -   Checks role of user, if staff.
-        -   returns all students users `'isStaff == false'`
-            <br><br/>
+        -   Staff Role required
+        -   Checks role of user, if staff:
+            -   returns all students users `'isStaff == false'`
+                <br><br/>
 
     -   `'/users/search/:id'`:
 
+        -   Requires student id (number) from intra.
         -   Checks role if staff or student.
         -   Searches for user by id:
-            -   Only shows student profile if student.
-            -   If Staff, can search any user.
+            -   Only shows student profile if Role == student.
+            -   If Role == Staff, can search any user.
                 <br><br/>
 
     -   `'/users/remove/:id'`:
 
+        -   Requires Role == Staff
+        -   Requires student id (number) from intra.
         -   If staff, allows deletion of student.
         -   Cannot delete staff account.
             <br><br/>
 
     -   `'/users/update/:id'`:
+
+        -   Requires student id (number) from intra.
         -   Allows update of profile:
-            -   If staff updates.
+            -   If Role == Staff updates any user profile (Yet to implement guards against updating other Staff Profiles).
+            -   If Role == Student, only student profile updates. (Yet to implement guards against updating other students)
             -   If changes found from 42API.
                 <br><br/>
 
-3.  Project Routes: `'/projects'`
+    -   `'/users/all/project'`: **_(Temporary)_**
+
+        -   Requires Role == Staff
+        -   Requires project name (string) to search.
+        -   Allows call all users by project.
+            -   _Can be used for filters temporarily_
+                <br><br/>
+
+3.  Project Routes: `'/projects'` **_(Non-Functional)_**
 
     -   `'/projects/all'`:
 
@@ -254,3 +276,10 @@ _Note: Students can only view their projects data._
 -   **_to fill_**
 -   **_to fill_**
     <br><br/>
+
+# Future Implementations
+
+1.  Bubble chart to visualise student pace in groups:
+    ![Bubble Chart](https://github.com/bassamnaji/ft-progress-monitor/blob/back-end/bubbleChart.svg?raw=true)
+
+2.

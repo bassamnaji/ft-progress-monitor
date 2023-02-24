@@ -1,23 +1,23 @@
-import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
-import { User } from "src/users/entities/user.entity";
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
+import { User } from 'src/users/entities/user.entity'
 
 @Entity()
 export class Project {
-  @PrimaryGeneratedColumn()
-  id: number;
+    @PrimaryGeneratedColumn()
+    id: number
 
-  @Column()
-  project: string;
+    @Column()
+    project: string
 
-  @Column()
-  status: string;
+    @Column()
+    status: string
 
-  @Column()
-  marked_at: Date | null;
+    @Column()
+    marked_at: Date | null
 
-  @Column()
-  validated: boolean;
+    @Column()
+    validated: boolean
 
-  @ManyToOne(() => User, (user) => user.projects)
-  user: User;
+    @ManyToOne(() => User, (user) => user.projects)
+    user: User
 }
