@@ -435,6 +435,7 @@
                 {{ student.project.minishell.e_date.toDateString() }}</span
               >
             </p>
+
             <div class="flex items-center space-x-1">
       <span class="flex-shrink-0 w-12 text-sm dark:text-slate-200">circle 3</span>
       <div class="flex-1 h-4 overflow-hidden rounded-sm bg-gray-300">
@@ -442,6 +443,7 @@
       </div>
       <span class="flex-shrink-0 w-12 text-sm text-right dark:text-slate-200">50%</span>
     </div>
+    
           </div>
         </div>
       </div>
