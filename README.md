@@ -267,14 +267,12 @@ _Note: Students can only view their projects data._
 ## Front-end:
 
 -   nuxt
--   **_to fill_**
--   **_to fill_**
+-   tailwind
     <br><br/>
 
 ## Server Details:
 
--   **_to fill_**
--   **_to fill_**
+-   nginx
     <br><br/>
 
 # Future Implementations
