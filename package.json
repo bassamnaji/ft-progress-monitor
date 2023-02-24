@@ -1,10 +1,16 @@
 {
-  "name": "root",
-  "private": true,
-  "workspaces": [
-    "app/*"
-  ],
-  "devDependencies": {
-    "lerna": "^6.4.1"
-  }
+	"name": "root",
+	"private": true,
+	"version": "0.0.1",
+	"description": "",
+	"author": "",
+	"license": "UNLICENSED",
+	"scripts": {
+		"docker:build:dev": "docker compose up -d",
+        "docker:wipe:data": "docker compose down",
+		"docker:full:wipe": "docker compose down -v --rmi local"
+	},
+	"devDependencies": {
+		"lerna": "^6.4.1"
+	}
 }
