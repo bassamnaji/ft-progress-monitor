@@ -279,7 +279,7 @@ _Note: Students can only view their projects data._
 
 # Future Implementations
 
-1.  Bubble chart to visualise student pace in groups
-    <br><br/>
+1.  Bubble chart to visualise student pace in groups:
+    ![Bubble Chart](https://github.com/bassamnaji/ft-progress-monitor/blob/back-end/bubbleChart.svg?raw=true)
 
-![Bubble Chart](https://github.com/bassamnaji/ft-progress-monitor/blob/back-end/bubbleChart.svg?raw=true)
+2.
