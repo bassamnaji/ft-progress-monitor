@@ -22,6 +22,7 @@ services:
 
         networks:
             - proxy_frontend_net
+            - backend_frontend_net
 
         restart: on-failure
 
@@ -46,6 +47,7 @@ services:
         networks:
             - proxy_backend_net
             - backend_db_net
+            - backend_frontend_net
 
         restart: on-failure
 
@@ -99,6 +101,7 @@ networks:
     proxy_frontend_net:
     proxy_backend_net:
     backend_db_net:
+    backend_frontend_net:
 
 volumes:
     db-data:
