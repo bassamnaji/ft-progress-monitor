@@ -44,7 +44,7 @@ export class UsersService {
     private weekHours(): number[] {
         let hours: number[]
 
-        for (let i = 0; i < 7; i++) {
+        for (let i = 0; i < 30; i++) {
             hours[i] = this.getLogHours()
         }
 
