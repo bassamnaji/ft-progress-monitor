@@ -12,7 +12,7 @@ export class CreateUserDto {
     displayname: string
 
     @IsNumber()
-    logHours?: number
+    logHours?: number[]
 
     @IsDate()
     kickOff?: Date
