@@ -31,14 +31,71 @@
           <button class="flex items-center">
             <div class="mr-3">
               <p class="text-sm text-slate-800 dark:text-white">Bassam Naji</p>
-              <p class="text-sm text-gray-400">Developer</p>
+              <p class="text-sm text-gray-400">Student</p>
             </div>
             <div class="mr-2"><img class="w-10 h-10 rounded-full object-cover object-center" src="~/assets/images/bnaji.jpg" alt=""/></div>
-            <span>
+            <div>
               <svg class="text-gray-400" width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.08335 0.666657C8.75002 0.333323 8.25002 0.333323 7.91669 0.666657L5.00002 3.58332L2.08335 0.666657C1.75002 0.333323 1.25002 0.333323 0.916687 0.666657C0.583354 0.99999 0.583354 1.49999 0.916687 1.83332L4.41669 5.33332C4.58335 5.49999 4.75002 5.58332 5.00002 5.58332C5.25002 5.58332 5.41669 5.49999 5.58335 5.33332L9.08335 1.83332C9.41669 1.49999 9.41669 0.99999 9.08335 0.666657Z" fill="currentColor"></path>
               </svg>
-            </span>
+              <!-- <div class="flex justify-center">
+  <div>
+    <div class="relative" data-te-dropdown-position="dropstart">
+      <button
+        class="flex items-center whitespace-nowrap rounded bg-primary pl-4 pr-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none"
+        type="button"
+        id="dropdownMenuButton1s"
+        data-te-dropdown-toggle-ref
+        aria-expanded="false"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        <span class="mr-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-5 w-5">
+            <path
+              fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+        Dropstart
+      </button>
+      <ul
+        class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+        aria-labelledby="dropdownMenuButton1s"
+        data-te-dropdown-menu-ref>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+            href="#"
+            data-te-dropdown-item-ref
+            >Action</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+            href="#"
+            data-te-dropdown-item-ref
+            >Another action</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+            href="#"
+            data-te-dropdown-item-ref
+            >Something else here</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+            </div>
           </button>
         </div>
         <div class="ml-auto flex xl:hidden">

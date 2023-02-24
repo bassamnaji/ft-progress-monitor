@@ -26,7 +26,7 @@
             ft_transcendence
           </a>
           <a class="col-span-3 justify-center w-auto h-auto p-5 text-slate-700 bg-slate-100 dark:bg-slate-500 ease-in duration-200 hover:text-purple-900 hover:bg-slate-300 rounded-full" href="#">
-            exam_rank_02
+            exam_rank_06
           </a>
         </div>
       </div>
