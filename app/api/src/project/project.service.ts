@@ -49,6 +49,6 @@ export class ProjectService {
     }
 
     async getProject(project: string): Promise<Project | undefined> {
-      return await this.projectRepository.findOne({ where: { project } })
+        return await this.projectRepository.findOne({ where: { project } })
     }
 }
