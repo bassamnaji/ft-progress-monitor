@@ -7,7 +7,7 @@
 
       <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
         <div class="flex flex-wrap items-center -mx-4">
-          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/>
+          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="~assets/profile-images/hakaddou.jpg" alt=""/>
             <div>
               <p class="text-sm font-medium">hakaddou</p>
               <p class="text-xs text-gray-500">hakaddou@student.42abudhabi.ae</p>
@@ -37,7 +37,7 @@
 
       <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
         <div class="flex flex-wrap items-center -mx-4">
-          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/>
+          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="~assets/profile-images/bnaji.jpg" alt=""/>
             <div>
               <p class="text-sm font-medium">bnaji</p>
               <p class="text-xs text-gray-500">bnaji@student.42abudhabi.ae</p>
@@ -67,7 +67,7 @@
 
       <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
         <div class="flex flex-wrap items-center -mx-4">
-          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/>
+          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="~assets/profile-images/hawadh.jpg" alt=""/>
             <div>
               <p class="text-sm font-medium">hawadh</p>
               <p class="text-xs text-gray-500">hawadh@student.42abudhabi.ae</p>
@@ -97,7 +97,7 @@
 
       <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
         <div class="flex flex-wrap items-center -mx-4">
-          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/>
+          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="~assets/profile-images/mpatel.jpg" alt=""/>
             <div>
               <p class="text-sm font-medium">mpatel</p>
               <p class="text-xs text-gray-500">mpatel@student.42abudhabi.ae</p>
