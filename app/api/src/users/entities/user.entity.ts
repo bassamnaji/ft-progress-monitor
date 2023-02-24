@@ -14,10 +14,13 @@ export class User {
     displayname: string
 
     @Column()
-    kickOff: Date
+    logHours?: number
 
     @Column()
-    circle: number
+    kickOff?: Date
+
+    @Column()
+    circle?: number
 
     @Column()
     isStaff: boolean
@@ -26,7 +29,10 @@ export class User {
     role: Role
 
     @Column({ length: 56 })
-    lastProject: string
+    lastProject?: string | null
+
+    @Column()
+    lastSubmitted?: Date
 
     @Column()
     currentPace?: number
@@ -47,5 +53,5 @@ export class User {
     blackHole?: number
 
     @OneToMany(() => Project, (project) => project.user)
-    projects: Project
+    projects?: Project[]
 }
