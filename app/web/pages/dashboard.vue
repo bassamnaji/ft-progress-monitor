@@ -1,30 +1,44 @@
 <template>
-  <Bar
-    id="my-chart-id"
-    :options="chartOptions"
-    :data="chartData"
-  />
+  <div class="bg-slate-200 dark:bg-slate-700">
+  <Navbar />
+    <div class="m-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  
+      <div class="col-span-2 grid grid-cols-2">
+        
+        <DashboardBox  />
+        <DashboardBox />
+        <DashboardBox />
+        <DashboardBox />
+        
+      </div>
+      <div class="m-5 col-span-3 lg:col-span-1">
+        <DashboardTabs class="mb-2"/>
+        <DoughnutChart class="mx-auto" />
+      </div>
+    </div>
+    <UserTable />
+  </div>
 </template>
 
-<script>
-import { Bar } from 'vue-chartjs'
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
+<script setup>
 
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+  const boxData = [
+    {
+      title: 'Logged In',
+      value: 400,
+    },
+    {
+      title: 'In Progress',
+      value: 300,
+    },
+    {
+      title: 'Not Started',
+      value: 300,
+    },
+    {
+      title: 'Not Started',
+      value: 300,
+    },
+  ];
 
-export default {
-  name: 'BarChart',
-  components: { Bar },
-  data() {
-    return {
-      chartData: {
-        labels: [ 'January', 'February', 'March' ],
-        datasets: [ { data: [40, 20, 12] } ]
-      },
-      chartOptions: {
-        responsive: true
-      }
-    }
-  }
-}
 </script>

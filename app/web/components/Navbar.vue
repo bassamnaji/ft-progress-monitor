@@ -31,7 +31,7 @@
           <button class="flex items-center">
             <div class="mr-3">
               <p class="text-sm text-slate-800 dark:text-white">Bassam Naji</p>
-              <p class="text-sm text-gray-400">Developer</p>
+              <p class="text-sm text-gray-400">Student</p>
             </div>
             <div class="mr-2"><img class="w-10 h-10 rounded-full object-cover object-center" src="~/assets/images/bnaji.jpg" alt=""/></div>
             <span>
