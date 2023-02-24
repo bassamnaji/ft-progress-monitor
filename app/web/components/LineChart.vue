@@ -1,7 +1,7 @@
 <template>
   <div class="container px-4 mx-auto">
     <div class="relative p-10 pt-14 bg-slate-200 dark:bg-slate-700 shadow-xl rounded overflow-hidden">
-      <Tabs />
+      <LineChartTabs />
       <Line :data="chartData" :options="chartOptions" />
     </div>
   </div>
