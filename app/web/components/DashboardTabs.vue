@@ -5,9 +5,10 @@
               <div class="px-3 md:px-5 bg-slate-300 dark:bg-slate-600 h-8 md:h-12 border rounded-lg">
                   <ul class="flex items-center bg-slate-300 dark:bg-slate-600 h-full">
                       <li @click="activeTab($event)" class="flex items-center justify-center text-sm bg-slate-400 text-slate-200 dark:bg-slate-200 dark:text-slate-800 py-0.5 px-3 md:px-5 md:py-2 font-normal rounded-md hover:text-gray-900 dark:hover:text-slate-900 ease-in duration-150 cursor-pointer whitespace-nowrap">Black Hole</li>
-                      <li @click="activeTab($event)" class="flex items-center justify-center text-sm text-slate-700 dark:text-slate-800 py-0.5 md:py-2 px-3 md:px-5 rounded-md font-normal hover:text-gray-900 dark:hover:text-slate-300 ease-in duration-100 cursor-pointer whitespace-nowrap">hello</li>
-                      <li @click="activeTab($event)" class="flex items-center justify-center text-sm text-slate-700 dark:text-slate-800 py-0.5 md:py-2 px-3 md:px-5 rounded-md font-normal hover:text-gray-900 dark:hover:text-slate-300 ease-in duration-100 cursor-pointer whitespace-nowrap">Accredit Path</li>
-                      <li @click="activeTab($event)" class="flex items-center justify-center text-sm text-slate-700 dark:text-slate-800 py-0.5 md:py-2 px-3 md:px-5 rounded-md font-normal hover:text-gray-900 dark:hover:text-slate-300 ease-in duration-100 cursor-pointer whitespace-nowrap">sdfj klj</li>
+                      <li @click="activeTab($event)" class="flex items-center justify-center text-sm text-slate-700 dark:text-slate-800 py-0.5 md:py-2 px-3 md:px-5 rounded-md font-normal hover:text-gray-900 dark:hover:text-slate-300 ease-in duration-100 cursor-pointer whitespace-nowrap">Nationality</li>
+                      <li @click="activeTab($event)" class="flex items-center justify-center text-sm text-slate-700 dark:text-slate-800 py-0.5 md:py-2 px-3 md:px-5 rounded-md font-normal hover:text-gray-900 dark:hover:text-slate-300 ease-in duration-100 cursor-pointer whitespace-nowrap">Accredited</li>
+                      <li @click="activeTab($event)" class="flex items-center justify-center text-sm text-slate-700 dark:text-slate-800 py-0.5 md:py-2 px-3 md:px-5 rounded-md font-normal hover:text-gray-900 dark:hover:text-slate-300 ease-in duration-100 cursor-pointer whitespace-nowrap">Circle</li>
+                      <li @click="activeTab($event)" class="flex items-center justify-center text-sm text-slate-700 dark:text-slate-800 py-0.5 md:py-2 px-3 md:px-5 rounded-md font-normal hover:text-gray-900 dark:hover:text-slate-300 ease-in duration-100 cursor-pointer whitespace-nowrap">Pace</li>
                   </ul>
               </div>
           </div>

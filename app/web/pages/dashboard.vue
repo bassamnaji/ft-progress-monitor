@@ -6,10 +6,6 @@
       <div class="col-span-2 grid grid-cols-2">
         
         <DashboardBox />
-        <!-- <DashboardBox />
-        <DashboardBox />
-        <DashboardBox /> -->
-        
       </div>
       <div class="m-5 col-span-3 lg:col-span-1">
         <DashboardTabs class="mb-2"/>

@@ -1,43 +1,28 @@
 <template>
   <div class="py-8">
     <div class="container px-4 mx-auto">
-      <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
-        <div class="flex flex-wrap items-center -mx-4">
-          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover rounded-full" src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt=""/>
-            <div>
-              <p class="text-sm font-medium">John Smith</p>
-              <p class="text-xs text-gray-500">john@shuffle.dev</p>
-            </div>
-          </div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-purple-500 bg-purple-50 dark:bg-slate-300 rounded-full" href="#">Marketing</a></div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
-            <p class="text-sm font-medium">Shuffle</p>
-          </div>
-          <div class="w-full lg:w-4/12 px-4 mb-6 lg:mb-0"><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Marketing</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Advertising</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Sales</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">+2</a></div>
-          <div class="w-full lg:w-1/12 px-4">
-            <div class="flex items-center"><a class="p-2 mr-3 bg-purple-100 dark:bg-slate-300 rounded" href="#">
-                <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12.5602 5.21334L3.22683 0.546671C2.85849 0.363344 2.44258 0.298078 2.03579 0.359772C1.629 0.421466 1.25114 0.607118 0.953719 0.891415C0.656301 1.17571 0.4538 1.54482 0.373827 1.94841C0.293853 2.352 0.340299 2.77044 0.506832 3.14667L2.10683 6.72667C2.14314 6.81322 2.16183 6.90614 2.16183 7C2.16183 7.09386 2.14314 7.18678 2.10683 7.27334L0.506832 10.8533C0.371298 11.1578 0.314002 11.4913 0.34015 11.8236C0.366297 12.1558 0.47506 12.4763 0.656553 12.7558C0.838046 13.0353 1.08652 13.2651 1.37938 13.4241C1.67224 13.5832 2.00022 13.6666 2.3335 13.6667C2.64565 13.6636 2.95316 13.5907 3.2335 13.4533L12.5668 8.78667C12.8979 8.62013 13.1762 8.36487 13.3706 8.04939C13.5651 7.7339 13.668 7.3706 13.668 7C13.668 6.62941 13.5651 6.2661 13.3706 5.95062C13.1762 5.63513 12.8979 5.37988 12.5668 5.21334H12.5602ZM11.9668 7.59334L2.6335 12.26C2.51094 12.3188 2.37332 12.3388 2.23909 12.3172C2.10486 12.2956 1.98044 12.2335 1.88251 12.1392C1.78458 12.0449 1.71782 11.9229 1.69119 11.7896C1.66455 11.6563 1.67932 11.518 1.7335 11.3933L3.32683 7.81334C3.34746 7.76553 3.36527 7.71656 3.38017 7.66667H7.9735C8.15031 7.66667 8.31988 7.59643 8.4449 7.47141C8.56993 7.34638 8.64016 7.17681 8.64016 7C8.64016 6.82319 8.56993 6.65362 8.4449 6.5286C8.31988 6.40357 8.15031 6.33334 7.9735 6.33334H3.38017C3.36527 6.28345 3.34746 6.23448 3.32683 6.18667L1.7335 2.60667C1.67932 2.48198 1.66455 2.3437 1.69119 2.21038C1.71782 2.07706 1.78458 1.95507 1.88251 1.86077C1.98044 1.76647 2.10486 1.70436 2.23909 1.68277C2.37332 1.66119 2.51094 1.68116 2.6335 1.74L11.9668 6.40667C12.076 6.46262 12.1677 6.54761 12.2317 6.6523C12.2957 6.75699 12.3295 6.87731 12.3295 7C12.3295 7.1227 12.2957 7.24302 12.2317 7.34771C12.1677 7.45239 12.076 7.53739 11.9668 7.59334V7.59334Z" fill="#382CDD"></path>
-                </svg></a>                  <a class="p-2 bg-purple-100 dark:bg-slate-300 rounded" href="#">
-                <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.9596 7.66662C11.8129 7.66662 11.6596 7.61995 11.5129 7.58662C11.2159 7.52117 10.924 7.43427 10.6396 7.32662C10.3303 7.21411 9.99034 7.21995 9.68512 7.34302C9.37989 7.4661 9.13097 7.69771 8.98624 7.99329L8.83958 8.29329C8.19025 7.93207 7.59357 7.48344 7.06625 6.95995C6.54276 6.43263 6.09413 5.83595 5.73291 5.18662L6.01291 4.99995C6.30849 4.85523 6.5401 4.60631 6.66317 4.30108C6.78625 3.99585 6.79209 3.65589 6.67958 3.34662C6.57373 3.06157 6.48687 2.76982 6.41958 2.47329C6.38625 2.32662 6.35958 2.17329 6.33958 2.01995C6.25862 1.55037 6.01266 1.12511 5.64599 0.820779C5.27932 0.516444 4.81604 0.353025 4.33958 0.359953H2.33958C2.05227 0.357255 1.76775 0.416495 1.50539 0.53364C1.24303 0.650784 1.00899 0.823083 0.819199 1.03881C0.629413 1.25453 0.488335 1.50862 0.405571 1.78376C0.322807 2.05891 0.300298 2.34866 0.339579 2.63329C0.694738 5.42621 1.97026 8.0212 3.96468 10.0084C5.9591 11.9955 8.55872 13.2616 11.3529 13.6066H11.6062C12.0979 13.6073 12.5725 13.427 12.9396 13.1C13.1505 12.9113 13.319 12.6801 13.4339 12.4215C13.5488 12.1629 13.6076 11.8829 13.6062 11.6V9.59995C13.5981 9.13688 13.4294 8.69099 13.1291 8.3384C12.8288 7.98581 12.4155 7.74837 11.9596 7.66662V7.66662ZM12.2929 11.6666C12.2928 11.7613 12.2725 11.8548 12.2334 11.941C12.1944 12.0272 12.1374 12.1041 12.0662 12.1666C11.9918 12.2309 11.9046 12.279 11.8105 12.3077C11.7164 12.3364 11.6173 12.3451 11.5196 12.3333C9.02285 12.0132 6.70374 10.8709 4.92806 9.08681C3.15238 7.30268 2.02119 4.97818 1.71291 2.47995C1.7023 2.3823 1.7116 2.28351 1.74025 2.18955C1.76889 2.09559 1.81629 2.00841 1.87958 1.93329C1.94205 1.86217 2.01895 1.80518 2.10516 1.7661C2.19138 1.72701 2.28492 1.70674 2.37958 1.70662H4.37958C4.53461 1.70317 4.68599 1.75387 4.80767 1.85C4.92935 1.94613 5.01372 2.08167 5.04624 2.23329C5.07291 2.41551 5.10625 2.59551 5.14625 2.77329C5.22326 3.12472 5.32575 3.47007 5.45291 3.80662L4.51958 4.23995C4.43978 4.27657 4.36799 4.32858 4.30835 4.39302C4.24871 4.45745 4.20238 4.53303 4.17203 4.61542C4.14167 4.6978 4.12789 4.78537 4.13148 4.8731C4.13506 4.96083 4.15594 5.04698 4.19291 5.12662C5.15238 7.18179 6.80441 8.83382 8.85958 9.79329C9.02189 9.85996 9.20394 9.85996 9.36625 9.79329C9.44939 9.76355 9.52579 9.71759 9.59103 9.65808C9.65626 9.59857 9.70902 9.52669 9.74625 9.44662L10.1596 8.51329C10.5042 8.63654 10.856 8.73894 11.2129 8.81995C11.3907 8.85995 11.5707 8.89329 11.7529 8.91995C11.9045 8.95248 12.0401 9.03684 12.1362 9.15852C12.2323 9.2802 12.283 9.43159 12.2796 9.58662L12.2929 11.6666Z" fill="#382CDD"></path>
-                </svg></a></div>
-          </div>
-        </div>
-      </div>
+
+
+
+
       <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
         <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/>
             <div>
-              <p class="text-sm font-medium">Marcus Snow</p>
-              <p class="text-xs text-gray-500">marcus@snow.com</p>
+              <p class="text-sm font-medium">hakaddou</p>
+              <p class="text-xs text-gray-500">hakaddou@student.42abudhabi.ae</p>
             </div>
           </div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-indigo-500 bg-slate-50 dark:bg-slate-300 rounded-full" href="#">Development</a></div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-green-500 bg-slate-50 dark:bg-slate-300 rounded-full" href="#">Available</a></div>
           <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
-            <p class="text-sm font-medium">Shuffle</p>
+            <p class="text-sm font-medium">88 days</p>
           </div>
-          <div class="w-full lg:w-4/12 px-4 mb-6 lg:mb-0"><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Developers</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Teams</a></div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
+            <p class="text-sm font-medium">Netpractice</p>
+          </div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
+            <p class="text-sm font-medium">pace 18</p>
+          </div>
           <div class="w-full lg:w-1/12 px-4">
             <div class="flex items-center"><a class="p-2 mr-3 bg-purple-100 dark:bg-slate-300 rounded" href="#">
                 <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,43 +34,25 @@
           </div>
         </div>
       </div>
-      <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
-        <div class="flex flex-wrap items-center -mx-4">
-          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover rounded-full" src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt=""/>
-            <div>
-              <p class="text-sm font-medium">John Smith</p>
-              <p class="text-xs text-gray-500">john@shuffle.dev</p>
-            </div>
-          </div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-purple-500 bg-purple-50 dark:bg-slate-300 rounded-full" href="#">Marketing</a></div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
-            <p class="text-sm font-medium">Shuffle</p>
-          </div>
-          <div class="w-full lg:w-4/12 px-4 mb-6 lg:mb-0"><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Marketing</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Advertising</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Sales</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">+2</a></div>
-          <div class="w-full lg:w-1/12 px-4">
-            <div class="flex items-center"><a class="p-2 mr-3 bg-purple-100 dark:bg-slate-300 rounded" href="#">
-                <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12.5602 5.21334L3.22683 0.546671C2.85849 0.363344 2.44258 0.298078 2.03579 0.359772C1.629 0.421466 1.25114 0.607118 0.953719 0.891415C0.656301 1.17571 0.4538 1.54482 0.373827 1.94841C0.293853 2.352 0.340299 2.77044 0.506832 3.14667L2.10683 6.72667C2.14314 6.81322 2.16183 6.90614 2.16183 7C2.16183 7.09386 2.14314 7.18678 2.10683 7.27334L0.506832 10.8533C0.371298 11.1578 0.314002 11.4913 0.34015 11.8236C0.366297 12.1558 0.47506 12.4763 0.656553 12.7558C0.838046 13.0353 1.08652 13.2651 1.37938 13.4241C1.67224 13.5832 2.00022 13.6666 2.3335 13.6667C2.64565 13.6636 2.95316 13.5907 3.2335 13.4533L12.5668 8.78667C12.8979 8.62013 13.1762 8.36487 13.3706 8.04939C13.5651 7.7339 13.668 7.3706 13.668 7C13.668 6.62941 13.5651 6.2661 13.3706 5.95062C13.1762 5.63513 12.8979 5.37988 12.5668 5.21334H12.5602ZM11.9668 7.59334L2.6335 12.26C2.51094 12.3188 2.37332 12.3388 2.23909 12.3172C2.10486 12.2956 1.98044 12.2335 1.88251 12.1392C1.78458 12.0449 1.71782 11.9229 1.69119 11.7896C1.66455 11.6563 1.67932 11.518 1.7335 11.3933L3.32683 7.81334C3.34746 7.76553 3.36527 7.71656 3.38017 7.66667H7.9735C8.15031 7.66667 8.31988 7.59643 8.4449 7.47141C8.56993 7.34638 8.64016 7.17681 8.64016 7C8.64016 6.82319 8.56993 6.65362 8.4449 6.5286C8.31988 6.40357 8.15031 6.33334 7.9735 6.33334H3.38017C3.36527 6.28345 3.34746 6.23448 3.32683 6.18667L1.7335 2.60667C1.67932 2.48198 1.66455 2.3437 1.69119 2.21038C1.71782 2.07706 1.78458 1.95507 1.88251 1.86077C1.98044 1.76647 2.10486 1.70436 2.23909 1.68277C2.37332 1.66119 2.51094 1.68116 2.6335 1.74L11.9668 6.40667C12.076 6.46262 12.1677 6.54761 12.2317 6.6523C12.2957 6.75699 12.3295 6.87731 12.3295 7C12.3295 7.1227 12.2957 7.24302 12.2317 7.34771C12.1677 7.45239 12.076 7.53739 11.9668 7.59334V7.59334Z" fill="#382CDD"></path>
-                </svg></a>                  <a class="p-2 bg-purple-100 dark:bg-slate-300 rounded" href="#">
-                <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.9596 7.66662C11.8129 7.66662 11.6596 7.61995 11.5129 7.58662C11.2159 7.52117 10.924 7.43427 10.6396 7.32662C10.3303 7.21411 9.99034 7.21995 9.68512 7.34302C9.37989 7.4661 9.13097 7.69771 8.98624 7.99329L8.83958 8.29329C8.19025 7.93207 7.59357 7.48344 7.06625 6.95995C6.54276 6.43263 6.09413 5.83595 5.73291 5.18662L6.01291 4.99995C6.30849 4.85523 6.5401 4.60631 6.66317 4.30108C6.78625 3.99585 6.79209 3.65589 6.67958 3.34662C6.57373 3.06157 6.48687 2.76982 6.41958 2.47329C6.38625 2.32662 6.35958 2.17329 6.33958 2.01995C6.25862 1.55037 6.01266 1.12511 5.64599 0.820779C5.27932 0.516444 4.81604 0.353025 4.33958 0.359953H2.33958C2.05227 0.357255 1.76775 0.416495 1.50539 0.53364C1.24303 0.650784 1.00899 0.823083 0.819199 1.03881C0.629413 1.25453 0.488335 1.50862 0.405571 1.78376C0.322807 2.05891 0.300298 2.34866 0.339579 2.63329C0.694738 5.42621 1.97026 8.0212 3.96468 10.0084C5.9591 11.9955 8.55872 13.2616 11.3529 13.6066H11.6062C12.0979 13.6073 12.5725 13.427 12.9396 13.1C13.1505 12.9113 13.319 12.6801 13.4339 12.4215C13.5488 12.1629 13.6076 11.8829 13.6062 11.6V9.59995C13.5981 9.13688 13.4294 8.69099 13.1291 8.3384C12.8288 7.98581 12.4155 7.74837 11.9596 7.66662V7.66662ZM12.2929 11.6666C12.2928 11.7613 12.2725 11.8548 12.2334 11.941C12.1944 12.0272 12.1374 12.1041 12.0662 12.1666C11.9918 12.2309 11.9046 12.279 11.8105 12.3077C11.7164 12.3364 11.6173 12.3451 11.5196 12.3333C9.02285 12.0132 6.70374 10.8709 4.92806 9.08681C3.15238 7.30268 2.02119 4.97818 1.71291 2.47995C1.7023 2.3823 1.7116 2.28351 1.74025 2.18955C1.76889 2.09559 1.81629 2.00841 1.87958 1.93329C1.94205 1.86217 2.01895 1.80518 2.10516 1.7661C2.19138 1.72701 2.28492 1.70674 2.37958 1.70662H4.37958C4.53461 1.70317 4.68599 1.75387 4.80767 1.85C4.92935 1.94613 5.01372 2.08167 5.04624 2.23329C5.07291 2.41551 5.10625 2.59551 5.14625 2.77329C5.22326 3.12472 5.32575 3.47007 5.45291 3.80662L4.51958 4.23995C4.43978 4.27657 4.36799 4.32858 4.30835 4.39302C4.24871 4.45745 4.20238 4.53303 4.17203 4.61542C4.14167 4.6978 4.12789 4.78537 4.13148 4.8731C4.13506 4.96083 4.15594 5.04698 4.19291 5.12662C5.15238 7.18179 6.80441 8.83382 8.85958 9.79329C9.02189 9.85996 9.20394 9.85996 9.36625 9.79329C9.44939 9.76355 9.52579 9.71759 9.59103 9.65808C9.65626 9.59857 9.70902 9.52669 9.74625 9.44662L10.1596 8.51329C10.5042 8.63654 10.856 8.73894 11.2129 8.81995C11.3907 8.85995 11.5707 8.89329 11.7529 8.91995C11.9045 8.95248 12.0401 9.03684 12.1362 9.15852C12.2323 9.2802 12.283 9.43159 12.2796 9.58662L12.2929 11.6666Z" fill="#382CDD"></path>
-                </svg></a></div>
-          </div>
-        </div>
-      </div>
+
       <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
         <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/>
             <div>
-              <p class="text-sm font-medium">Marcus Snow</p>
-              <p class="text-xs text-gray-500">marcus@snow.com</p>
+              <p class="text-sm font-medium">bnaji</p>
+              <p class="text-xs text-gray-500">bnaji@student.42abudhabi.ae</p>
             </div>
           </div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-indigo-500 bg-slate-50 dark:bg-slate-300 rounded-full" href="#">Development</a></div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-green-500 bg-slate-50 dark:bg-slate-300 rounded-full" href="#">Available</a></div>
           <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
-            <p class="text-sm font-medium">Shuffle</p>
+            <p class="text-sm font-medium">228 days</p>
           </div>
-          <div class="w-full lg:w-4/12 px-4 mb-6 lg:mb-0"><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Developers</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Teams</a></div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
+            <p class="text-sm font-medium">Transcendence</p>
+          </div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
+            <p class="text-sm font-medium">pace 12</p>
+          </div>
           <div class="w-full lg:w-1/12 px-4">
             <div class="flex items-center"><a class="p-2 mr-3 bg-purple-100 dark:bg-slate-300 rounded" href="#">
                 <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,43 +64,25 @@
           </div>
         </div>
       </div>
-      <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
-        <div class="flex flex-wrap items-center -mx-4">
-          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover rounded-full" src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt=""/>
-            <div>
-              <p class="text-sm font-medium">John Smith</p>
-              <p class="text-xs text-gray-500">john@shuffle.dev</p>
-            </div>
-          </div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-purple-500 bg-purple-50 dark:bg-slate-300 rounded-full" href="#">Marketing</a></div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
-            <p class="text-sm font-medium">Shuffle</p>
-          </div>
-          <div class="w-full lg:w-4/12 px-4 mb-6 lg:mb-0"><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Marketing</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Advertising</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Sales</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">+2</a></div>
-          <div class="w-full lg:w-1/12 px-4">
-            <div class="flex items-center"><a class="p-2 mr-3 bg-purple-100 dark:bg-slate-300 rounded" href="#">
-                <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12.5602 5.21334L3.22683 0.546671C2.85849 0.363344 2.44258 0.298078 2.03579 0.359772C1.629 0.421466 1.25114 0.607118 0.953719 0.891415C0.656301 1.17571 0.4538 1.54482 0.373827 1.94841C0.293853 2.352 0.340299 2.77044 0.506832 3.14667L2.10683 6.72667C2.14314 6.81322 2.16183 6.90614 2.16183 7C2.16183 7.09386 2.14314 7.18678 2.10683 7.27334L0.506832 10.8533C0.371298 11.1578 0.314002 11.4913 0.34015 11.8236C0.366297 12.1558 0.47506 12.4763 0.656553 12.7558C0.838046 13.0353 1.08652 13.2651 1.37938 13.4241C1.67224 13.5832 2.00022 13.6666 2.3335 13.6667C2.64565 13.6636 2.95316 13.5907 3.2335 13.4533L12.5668 8.78667C12.8979 8.62013 13.1762 8.36487 13.3706 8.04939C13.5651 7.7339 13.668 7.3706 13.668 7C13.668 6.62941 13.5651 6.2661 13.3706 5.95062C13.1762 5.63513 12.8979 5.37988 12.5668 5.21334H12.5602ZM11.9668 7.59334L2.6335 12.26C2.51094 12.3188 2.37332 12.3388 2.23909 12.3172C2.10486 12.2956 1.98044 12.2335 1.88251 12.1392C1.78458 12.0449 1.71782 11.9229 1.69119 11.7896C1.66455 11.6563 1.67932 11.518 1.7335 11.3933L3.32683 7.81334C3.34746 7.76553 3.36527 7.71656 3.38017 7.66667H7.9735C8.15031 7.66667 8.31988 7.59643 8.4449 7.47141C8.56993 7.34638 8.64016 7.17681 8.64016 7C8.64016 6.82319 8.56993 6.65362 8.4449 6.5286C8.31988 6.40357 8.15031 6.33334 7.9735 6.33334H3.38017C3.36527 6.28345 3.34746 6.23448 3.32683 6.18667L1.7335 2.60667C1.67932 2.48198 1.66455 2.3437 1.69119 2.21038C1.71782 2.07706 1.78458 1.95507 1.88251 1.86077C1.98044 1.76647 2.10486 1.70436 2.23909 1.68277C2.37332 1.66119 2.51094 1.68116 2.6335 1.74L11.9668 6.40667C12.076 6.46262 12.1677 6.54761 12.2317 6.6523C12.2957 6.75699 12.3295 6.87731 12.3295 7C12.3295 7.1227 12.2957 7.24302 12.2317 7.34771C12.1677 7.45239 12.076 7.53739 11.9668 7.59334V7.59334Z" fill="#382CDD"></path>
-                </svg></a>                  <a class="p-2 bg-purple-100 dark:bg-slate-300 rounded" href="#">
-                <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.9596 7.66662C11.8129 7.66662 11.6596 7.61995 11.5129 7.58662C11.2159 7.52117 10.924 7.43427 10.6396 7.32662C10.3303 7.21411 9.99034 7.21995 9.68512 7.34302C9.37989 7.4661 9.13097 7.69771 8.98624 7.99329L8.83958 8.29329C8.19025 7.93207 7.59357 7.48344 7.06625 6.95995C6.54276 6.43263 6.09413 5.83595 5.73291 5.18662L6.01291 4.99995C6.30849 4.85523 6.5401 4.60631 6.66317 4.30108C6.78625 3.99585 6.79209 3.65589 6.67958 3.34662C6.57373 3.06157 6.48687 2.76982 6.41958 2.47329C6.38625 2.32662 6.35958 2.17329 6.33958 2.01995C6.25862 1.55037 6.01266 1.12511 5.64599 0.820779C5.27932 0.516444 4.81604 0.353025 4.33958 0.359953H2.33958C2.05227 0.357255 1.76775 0.416495 1.50539 0.53364C1.24303 0.650784 1.00899 0.823083 0.819199 1.03881C0.629413 1.25453 0.488335 1.50862 0.405571 1.78376C0.322807 2.05891 0.300298 2.34866 0.339579 2.63329C0.694738 5.42621 1.97026 8.0212 3.96468 10.0084C5.9591 11.9955 8.55872 13.2616 11.3529 13.6066H11.6062C12.0979 13.6073 12.5725 13.427 12.9396 13.1C13.1505 12.9113 13.319 12.6801 13.4339 12.4215C13.5488 12.1629 13.6076 11.8829 13.6062 11.6V9.59995C13.5981 9.13688 13.4294 8.69099 13.1291 8.3384C12.8288 7.98581 12.4155 7.74837 11.9596 7.66662V7.66662ZM12.2929 11.6666C12.2928 11.7613 12.2725 11.8548 12.2334 11.941C12.1944 12.0272 12.1374 12.1041 12.0662 12.1666C11.9918 12.2309 11.9046 12.279 11.8105 12.3077C11.7164 12.3364 11.6173 12.3451 11.5196 12.3333C9.02285 12.0132 6.70374 10.8709 4.92806 9.08681C3.15238 7.30268 2.02119 4.97818 1.71291 2.47995C1.7023 2.3823 1.7116 2.28351 1.74025 2.18955C1.76889 2.09559 1.81629 2.00841 1.87958 1.93329C1.94205 1.86217 2.01895 1.80518 2.10516 1.7661C2.19138 1.72701 2.28492 1.70674 2.37958 1.70662H4.37958C4.53461 1.70317 4.68599 1.75387 4.80767 1.85C4.92935 1.94613 5.01372 2.08167 5.04624 2.23329C5.07291 2.41551 5.10625 2.59551 5.14625 2.77329C5.22326 3.12472 5.32575 3.47007 5.45291 3.80662L4.51958 4.23995C4.43978 4.27657 4.36799 4.32858 4.30835 4.39302C4.24871 4.45745 4.20238 4.53303 4.17203 4.61542C4.14167 4.6978 4.12789 4.78537 4.13148 4.8731C4.13506 4.96083 4.15594 5.04698 4.19291 5.12662C5.15238 7.18179 6.80441 8.83382 8.85958 9.79329C9.02189 9.85996 9.20394 9.85996 9.36625 9.79329C9.44939 9.76355 9.52579 9.71759 9.59103 9.65808C9.65626 9.59857 9.70902 9.52669 9.74625 9.44662L10.1596 8.51329C10.5042 8.63654 10.856 8.73894 11.2129 8.81995C11.3907 8.85995 11.5707 8.89329 11.7529 8.91995C11.9045 8.95248 12.0401 9.03684 12.1362 9.15852C12.2323 9.2802 12.283 9.43159 12.2796 9.58662L12.2929 11.6666Z" fill="#382CDD"></path>
-                </svg></a></div>
-          </div>
-        </div>
-      </div>
+
       <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
         <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/>
             <div>
-              <p class="text-sm font-medium">Marcus Snow</p>
-              <p class="text-xs text-gray-500">marcus@snow.com</p>
+              <p class="text-sm font-medium">hawadh</p>
+              <p class="text-xs text-gray-500">hawadh@student.42abudhabi.ae</p>
             </div>
           </div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-indigo-500 bg-slate-50 dark:bg-slate-300 rounded-full" href="#">Development</a></div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-green-500 bg-slate-50 dark:bg-slate-300 rounded-full" href="#">Available</a></div>
           <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
-            <p class="text-sm font-medium">Shuffle</p>
+            <p class="text-sm font-medium">68 days</p>
           </div>
-          <div class="w-full lg:w-4/12 px-4 mb-6 lg:mb-0"><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Developers</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Teams</a></div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
+            <p class="text-sm font-medium">cpp08</p>
+          </div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
+            <p class="text-sm font-medium">pace 18</p>
+          </div>
           <div class="w-full lg:w-1/12 px-4">
             <div class="flex items-center"><a class="p-2 mr-3 bg-purple-100 dark:bg-slate-300 rounded" href="#">
                 <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,43 +94,25 @@
           </div>
         </div>
       </div>
-      <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
-        <div class="flex flex-wrap items-center -mx-4">
-          <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover rounded-full" src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt=""/>
-            <div>
-              <p class="text-sm font-medium">John Smith</p>
-              <p class="text-xs text-gray-500">john@shuffle.dev</p>
-            </div>
-          </div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-purple-500 bg-purple-50 dark:bg-slate-300 rounded-full" href="#">Marketing</a></div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
-            <p class="text-sm font-medium">Shuffle</p>
-          </div>
-          <div class="w-full lg:w-4/12 px-4 mb-6 lg:mb-0"><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Marketing</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Advertising</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Sales</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">+2</a></div>
-          <div class="w-full lg:w-1/12 px-4">
-            <div class="flex items-center"><a class="p-2 mr-3 bg-purple-100 dark:bg-slate-300 rounded" href="#">
-                <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12.5602 5.21334L3.22683 0.546671C2.85849 0.363344 2.44258 0.298078 2.03579 0.359772C1.629 0.421466 1.25114 0.607118 0.953719 0.891415C0.656301 1.17571 0.4538 1.54482 0.373827 1.94841C0.293853 2.352 0.340299 2.77044 0.506832 3.14667L2.10683 6.72667C2.14314 6.81322 2.16183 6.90614 2.16183 7C2.16183 7.09386 2.14314 7.18678 2.10683 7.27334L0.506832 10.8533C0.371298 11.1578 0.314002 11.4913 0.34015 11.8236C0.366297 12.1558 0.47506 12.4763 0.656553 12.7558C0.838046 13.0353 1.08652 13.2651 1.37938 13.4241C1.67224 13.5832 2.00022 13.6666 2.3335 13.6667C2.64565 13.6636 2.95316 13.5907 3.2335 13.4533L12.5668 8.78667C12.8979 8.62013 13.1762 8.36487 13.3706 8.04939C13.5651 7.7339 13.668 7.3706 13.668 7C13.668 6.62941 13.5651 6.2661 13.3706 5.95062C13.1762 5.63513 12.8979 5.37988 12.5668 5.21334H12.5602ZM11.9668 7.59334L2.6335 12.26C2.51094 12.3188 2.37332 12.3388 2.23909 12.3172C2.10486 12.2956 1.98044 12.2335 1.88251 12.1392C1.78458 12.0449 1.71782 11.9229 1.69119 11.7896C1.66455 11.6563 1.67932 11.518 1.7335 11.3933L3.32683 7.81334C3.34746 7.76553 3.36527 7.71656 3.38017 7.66667H7.9735C8.15031 7.66667 8.31988 7.59643 8.4449 7.47141C8.56993 7.34638 8.64016 7.17681 8.64016 7C8.64016 6.82319 8.56993 6.65362 8.4449 6.5286C8.31988 6.40357 8.15031 6.33334 7.9735 6.33334H3.38017C3.36527 6.28345 3.34746 6.23448 3.32683 6.18667L1.7335 2.60667C1.67932 2.48198 1.66455 2.3437 1.69119 2.21038C1.71782 2.07706 1.78458 1.95507 1.88251 1.86077C1.98044 1.76647 2.10486 1.70436 2.23909 1.68277C2.37332 1.66119 2.51094 1.68116 2.6335 1.74L11.9668 6.40667C12.076 6.46262 12.1677 6.54761 12.2317 6.6523C12.2957 6.75699 12.3295 6.87731 12.3295 7C12.3295 7.1227 12.2957 7.24302 12.2317 7.34771C12.1677 7.45239 12.076 7.53739 11.9668 7.59334V7.59334Z" fill="#382CDD"></path>
-                </svg></a>                  <a class="p-2 bg-purple-100 dark:bg-slate-300 rounded" href="#">
-                <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.9596 7.66662C11.8129 7.66662 11.6596 7.61995 11.5129 7.58662C11.2159 7.52117 10.924 7.43427 10.6396 7.32662C10.3303 7.21411 9.99034 7.21995 9.68512 7.34302C9.37989 7.4661 9.13097 7.69771 8.98624 7.99329L8.83958 8.29329C8.19025 7.93207 7.59357 7.48344 7.06625 6.95995C6.54276 6.43263 6.09413 5.83595 5.73291 5.18662L6.01291 4.99995C6.30849 4.85523 6.5401 4.60631 6.66317 4.30108C6.78625 3.99585 6.79209 3.65589 6.67958 3.34662C6.57373 3.06157 6.48687 2.76982 6.41958 2.47329C6.38625 2.32662 6.35958 2.17329 6.33958 2.01995C6.25862 1.55037 6.01266 1.12511 5.64599 0.820779C5.27932 0.516444 4.81604 0.353025 4.33958 0.359953H2.33958C2.05227 0.357255 1.76775 0.416495 1.50539 0.53364C1.24303 0.650784 1.00899 0.823083 0.819199 1.03881C0.629413 1.25453 0.488335 1.50862 0.405571 1.78376C0.322807 2.05891 0.300298 2.34866 0.339579 2.63329C0.694738 5.42621 1.97026 8.0212 3.96468 10.0084C5.9591 11.9955 8.55872 13.2616 11.3529 13.6066H11.6062C12.0979 13.6073 12.5725 13.427 12.9396 13.1C13.1505 12.9113 13.319 12.6801 13.4339 12.4215C13.5488 12.1629 13.6076 11.8829 13.6062 11.6V9.59995C13.5981 9.13688 13.4294 8.69099 13.1291 8.3384C12.8288 7.98581 12.4155 7.74837 11.9596 7.66662V7.66662ZM12.2929 11.6666C12.2928 11.7613 12.2725 11.8548 12.2334 11.941C12.1944 12.0272 12.1374 12.1041 12.0662 12.1666C11.9918 12.2309 11.9046 12.279 11.8105 12.3077C11.7164 12.3364 11.6173 12.3451 11.5196 12.3333C9.02285 12.0132 6.70374 10.8709 4.92806 9.08681C3.15238 7.30268 2.02119 4.97818 1.71291 2.47995C1.7023 2.3823 1.7116 2.28351 1.74025 2.18955C1.76889 2.09559 1.81629 2.00841 1.87958 1.93329C1.94205 1.86217 2.01895 1.80518 2.10516 1.7661C2.19138 1.72701 2.28492 1.70674 2.37958 1.70662H4.37958C4.53461 1.70317 4.68599 1.75387 4.80767 1.85C4.92935 1.94613 5.01372 2.08167 5.04624 2.23329C5.07291 2.41551 5.10625 2.59551 5.14625 2.77329C5.22326 3.12472 5.32575 3.47007 5.45291 3.80662L4.51958 4.23995C4.43978 4.27657 4.36799 4.32858 4.30835 4.39302C4.24871 4.45745 4.20238 4.53303 4.17203 4.61542C4.14167 4.6978 4.12789 4.78537 4.13148 4.8731C4.13506 4.96083 4.15594 5.04698 4.19291 5.12662C5.15238 7.18179 6.80441 8.83382 8.85958 9.79329C9.02189 9.85996 9.20394 9.85996 9.36625 9.79329C9.44939 9.76355 9.52579 9.71759 9.59103 9.65808C9.65626 9.59857 9.70902 9.52669 9.74625 9.44662L10.1596 8.51329C10.5042 8.63654 10.856 8.73894 11.2129 8.81995C11.3907 8.85995 11.5707 8.89329 11.7529 8.91995C11.9045 8.95248 12.0401 9.03684 12.1362 9.15852C12.2323 9.2802 12.283 9.43159 12.2796 9.58662L12.2929 11.6666Z" fill="#382CDD"></path>
-                </svg></a></div>
-          </div>
-        </div>
-      </div>
+
       <div class="p-10 mb-4 bg-slate-100 dark:bg-slate-300 shadow rounded">
         <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full lg:w-3/12 flex px-4 mb-6 lg:mb-0"><img class="w-10 h-10 mr-4 object-cover object-top rounded-full" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/>
             <div>
-              <p class="text-sm font-medium">Marcus Snow</p>
-              <p class="text-xs text-gray-500">marcus@snow.com</p>
+              <p class="text-sm font-medium">mpatel</p>
+              <p class="text-xs text-gray-500">mpatel@student.42abudhabi.ae</p>
             </div>
           </div>
-          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-indigo-500 bg-slate-50 dark:bg-slate-300 rounded-full" href="#">Development</a></div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0"><a class="py-1 px-2 text-xs text-grey-500 bg-slate-50 dark:bg-slate-300 rounded-full" href="#">Unavailable</a></div>
           <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
-            <p class="text-sm font-medium">Shuffle</p>
+            <p class="text-sm font-medium">207 days</p>
           </div>
-          <div class="w-full lg:w-4/12 px-4 mb-6 lg:mb-0"><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Developers</a><a class="inline-block py-1 px-2 mr-2 mb-1 lg:mb-0 text-xs border rounded" href="#">Teams</a></div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
+            <p class="text-sm font-medium">Transcendence</p>
+          </div>
+          <div class="w-1/2 lg:w-2/12 px-4 mb-6 lg:mb-0">
+            <p class="text-sm font-medium">pace 12</p>
+          </div>
           <div class="w-full lg:w-1/12 px-4">
             <div class="flex items-center"><a class="p-2 mr-3 bg-purple-100 dark:bg-slate-300 rounded" href="#">
                 <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,6 +124,10 @@
           </div>
         </div>
       </div>
+
+      
+
+
       <div class="flex flex-wrap mt-2 -mx-4 items-center justify-between">
         <div class="w-full lg:w-1/3 px-4 flex items-center mb-4 lg:mb-0">
           <p class="text-xs text-gray-400">Show</p>
