@@ -38,7 +38,7 @@ export class UsersController {
         return this.usersService.remove(+id)
     }
 
-    @Roles(Role.student)
+    @Roles(Role.student || Role.staff)
     @UseGuards(JwtAuthGuard)
     @Patch('update/:id')
     update(@Body() updateDto: UpdateUserDto, @Param('id') id: number) {
