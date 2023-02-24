@@ -53,5 +53,5 @@ export class User {
     blackHole?: number
 
     @OneToMany(() => Project, (project) => project.user)
-    projects?: Project
+    projects?: Project[]
 }
