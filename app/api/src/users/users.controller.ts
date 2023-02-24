@@ -24,6 +24,12 @@ export class UsersController {
         return this.usersService.findAll()
     }
 
+    @UseGuards(JwtAuthGuard)
+    @Get('user')
+    fetchLoggedUser(@Req() req: Req) {
+        return this.usersService.findOne(req.user.id)
+    }
+
     // @Roles(Role.staff || Role.student)
     @UseGuards(JwtAuthGuard)
     @Get('search/:id')
