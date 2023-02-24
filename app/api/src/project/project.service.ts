@@ -47,4 +47,8 @@ export class ProjectService {
         })
         return projects.map((projects) => new ProjectInfoResponseDto(projects))
     }
+
+    async getProject(project: string): Promise<Project | undefined> {
+      return await this.projectRepository.findOne({ where: { project } })
+    }
 }

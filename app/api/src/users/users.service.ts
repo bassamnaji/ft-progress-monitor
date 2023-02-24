@@ -232,4 +232,15 @@ export class UsersService {
 
         return
     }
+
+    async fetchUsersWithSameProject(project: string): Promise<User[]> {
+        const project_list = await this.projectService.getProject(project);
+        const users = await this.userRepository
+            .createQueryBuilder('user')
+            .leftJoinAndSelect('user.projects', 'project')
+            .where('project.project = :project', { project: project_list.project })
+            .getMany();
+
+        return users;
+    }
 }
