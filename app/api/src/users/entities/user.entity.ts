@@ -14,7 +14,7 @@ export class User {
     displayname: string
 
     @Column()
-    logHours?: number[]
+    logHours?: number
 
     @Column()
     kickOff?: Date

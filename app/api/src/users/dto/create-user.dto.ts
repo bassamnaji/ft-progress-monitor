@@ -12,7 +12,7 @@ export class CreateUserDto {
     displayname: string
 
     @IsNumber()
-    logHours?: number[]
+    logHours?: number
 
     @IsDate()
     kickOff?: Date
@@ -26,7 +26,7 @@ export class CreateUserDto {
     @IsEnum(Role)
     role: Role
 
-    // @IsString({ null: true })
+    @IsString()
     lastProject?: string | null
 
     @IsDate()
@@ -44,7 +44,6 @@ export class CreateUserDto {
     @IsNumber()
     freezeRemain?: number
 
-    // @IsBoolean({ default: false })
     @IsBoolean()
     atRisk?: boolean
 

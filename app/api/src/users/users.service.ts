@@ -41,22 +41,6 @@ export class UsersService {
         }
     }
 
-    private weekHours(): number[] {
-        let hours: number[]
-
-        for (let i = 0; i < 30; i++) {
-            hours[i] = this.getLogHours()
-        }
-
-        return hours
-    }
-
-    private getLogHours(): number {
-        const num = (Math.random() * 10).toString()
-
-        return parseInt(num)
-    }
-
     private async getBlackHole(user: Me) {
         const day = 86400000
         const start = user.cursus_users.at(1).begin_at.getTime()
@@ -135,7 +119,6 @@ export class UsersService {
                 id: intraUser.id,
                 login: intraUser.login,
                 displayname: intraUser.displayname,
-                logHours: this.weekHours(),
                 kickOff: intraUser.cursus_users.at(1).begin_at,
                 circle: 4,
                 isStaff: isStaff,
