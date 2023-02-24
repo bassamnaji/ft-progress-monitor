@@ -102,16 +102,13 @@ export class UsersService {
     }
 
     async findOrCreate(intraUser: Me) {
-        console.log('fosfdsklfasjdklf')
         let found = await this.userRepository.findOneBy({login: intraUser.login})
 
         const httpStatus = found ? HttpStatus.CREATED : HttpStatus.OK
 
-        console.log('found', found)
         if (!found) {
             found = await this.create(intraUser, this.createUserDto)
         }
-        console.log('found2', found)
 
         return { httpStatus, found }
     }
