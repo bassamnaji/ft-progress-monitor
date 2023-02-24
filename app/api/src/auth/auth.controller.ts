@@ -16,11 +16,10 @@ export class AuthController {
     @UseGuards(FtAuthGuard)
     @Post()
     async GetAuth(
-        @Req() req: Request,
+        @Req() req,
         @Res() res: Response,
-        @Body() intraUser: Me
     ): Promise<Response> {
-        const user = await this.usersService.findOrCreate(intraUser)
+        const user = await this.usersService.findOrCreate(req.user)
 
         const token: string = await this.authService.getJwt(user.found)
 

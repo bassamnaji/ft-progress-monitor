@@ -137,6 +137,7 @@ export class UsersService {
                 displayname: intraUser.displayname,
                 logHours: this.weekHours(),
                 kickOff: intraUser.cursus_users.at(1).begin_at,
+                circle: 4,
                 isStaff: isStaff,
                 role: this.assignRole(intraUser),
                 lastProject: await this.checkLastProject(intraUser),
@@ -176,7 +177,9 @@ export class UsersService {
     }
 
     async findOrCreate(intraUser: Me) {
-        let found = await this.userRepository.findOneBy(intraUser)
+        let found = await this.userRepository.findOneBy({
+            login: intraUser.login
+        })
 
         const httpStatus = found ? HttpStatus.CREATED : HttpStatus.OK
 

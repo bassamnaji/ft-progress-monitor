@@ -1,4 +1,8 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types"]
+  },
+  "modules": ["chart.js"],
   "extends": "./.nuxt/tsconfig.json"
 }
